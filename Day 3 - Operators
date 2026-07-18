@@ -105,3 +105,102 @@ Output
 Result:false
 Result:true
 Result:true
+
+4.Assignment operator
+
+	It is used to assign (store) a value into a variable.
+	a += 10 (or) a = a + 10
+	a -= 5 (or)  a = a - 5
+	a *= 2 (or)  a = a * 2
+	a /= 5 (or)  a = a / 5
+	a %= 3 (or)  a = a % 3
+
+
+5. Increment and Decrement operators
+
+	i)Increment operator (++)
+		It is used to increase the value of a variable by 1.
+			 Ex:	int count = 5;
+				count++; //post increment
+				++count; //pre-increment
+	ii)Decrement operator (--)
+		It is used to decrease the value of a variable by 1.
+			Ex:	int count = 5;
+				count--; //post decrement
+				--count; //pre-decrement
+
+Note: System.out.println(++a)	---> add 1 to value of a and prints result
+      System.out.println(a++)	---> add 1 to the value a and store it memory, but prints the previous value of a
+      System.out.println(--a)	---> Subtract 1 from value of a and prints result
+      System.out.println(a--)	---> Subtract 1 from value a and store it memory, but prints the previous value of a
+
+Example Program
+public class Ex {
+public static void main(String[] args) {
+    int a=200;
+    System.out.println(a);
+    System.out.println(a++);
+    System.out.println(++a);
+    System.out.println(a);
+    System.out.println(--a);
+    System.out.println(a--);
+    System.out.println(a);
+}
+}
+
+Output
+200
+200
+202
+202
+201
+201
+200
+
+6.Conditional or Ternary Operator
+	It is a short form of if-else statement. It uses three operands. They are
+		i)Condition
+		ii)Expression when condition is true
+		iii)Expression when condition is false
+	Syntax:
+		variable= condition ? expression1(true part) : expression2(false part)
+Example program
+public class Ex {
+public static void main(String[] args) {
+    int a=200;
+    int b=300;
+    int c;
+    c=(a>b)?a:b;
+    System.out.println(c);
+}
+}
+
+Output
+300
+
+7. Bitwise Operators
+	--> Bitwise AND (&)
+	--> Bitwise OR (|)
+	--> Bitwise NOT (~)
+	--> Exclusive OR (^)
+
+Note: True --> 1
+      false --> 0
+
+Truth Table
+---------------------------------------
+a	b		AND(&)	OR(|)	XOR(^)
+---------------------------------------
+1	1		1		1		0	
+0	1		0		1		1
+1	0		0		1		1
+1	1		0		0		0
+---------------------------------------
+
+--------------
+a	NOT(~)
+--------------
+0	1
+1	0
+--------------
+
