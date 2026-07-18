@@ -1,2 +1,135 @@
-How to get value at runtime/dynamic ?
+User Input
+How to get value at runtime/dynamic?
+
 Step 1:
+	header file import
+	Ex:-import java.util.Scanner;
+Step 2:
+	Create object to Scanner class
+	Ex:-Scanner scan = new Scanner(System.in);
+Step 3:
+	String data = scan.next();
+	String data = scan.nextLine();
+	int mark = scan.nextInt();
+	float avg = scan.nextFloat();
+	double d = scan.nextDouble();
+	long l = scan.nextLong();
+	short s = scan.nextShort();
+	byte b = scan.nextByte();
+	boolean bo = scan.nextBoolean();
+	char c = scan.next().charAt(0);
+Step 4:
+    	scan.close();
+
+Note:
+  next - does  not accepts space in string.
+  scan.next();
+
+  nextLine - accepts space in string.
+  scan.nextLine();
+
+Example program
+import java.util.Scanner;
+class Runtime
+{
+    public static void main(String args[])
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Your Name: ");
+        String name = scan.next();
+        System.out.println("Your Name: " + name);
+        scan.close();
+    }
+}
+
+Output
+Enter Your Name: Abinaya K
+Your Name: Abinaya
+
+
+Task 1 - Get 5 marks from user, find total marks and its average.
+
+Program
+import java.util.Scanner;
+class Task1 {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter mark1:");
+	      int m1=scan.nextInt();
+	      System.out.println("Enter mark2:");
+	      int m2=scan.nextInt();
+	      System.out.println("Enter mark3:");
+	      int m3=scan.nextInt();
+	      System.out.println("Enter mark4:");
+	      int m4=scan.nextInt();
+	      System.out.println("Enter mark5:");
+	      int m5=scan.nextInt();
+	      System.out.println("Total marks:"+(m1+m2+m3+m4+m5));
+	      System.out.println("Average marks:"+(m1+m2+m3+m4+m5)/5.0f);
+    }
+}
+
+Output
+Enter mark1:
+98
+Enter mark2:
+89
+Enter mark3:
+78
+Enter mark4:
+100
+Enter mark5:
+76
+Total marks:441
+
+
+String Functions
+	--> toUpperCase()
+	--> toLowerCase()
+	--> charAt()
+	--> indexOf()
+	--> equals()
+	--> equalsIgnoreCase()
+	--> substring()
+	--> compareTo()
+	--> hashCode()
+
+Example Program
+import java.util.Scanner;
+public class Strfun {
+    public static void main(String[] args) {
+        String name="abiNAYA";
+        System.out.println(name);
+        System.out.println(name.toUpperCase());
+        System.out.println(name.toLowerCase());
+        System.out.println(name.length());
+        System.out.println(name.charAt(4));
+        System.out.println(name.indexOf("A"));
+        System.out.println(name.equals("abinaya"));
+        System.out.println(name.equalsIgnoreCase("abinaya"));
+        System.out.println(name.substring(5));
+        System.out.println(name.substring(2, 5));
+        System.out.println(name.concat(" K"));
+        System.out.println(name.compareTo("pavya"));
+        System.out.println(name.compareTo("abirami"));
+        System.out.println("N".hashCode());
+        System.out.println("r".hashCode());
+    }
+}
+
+Output
+abiNAYA
+ABINAYA
+abinaya
+7
+A
+4
+false
+true
+YA
+iNA
+abiNAYA K
+-15
+-36
+78
+114
