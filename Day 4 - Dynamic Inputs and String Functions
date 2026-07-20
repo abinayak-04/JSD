@@ -84,21 +84,44 @@ Total marks:441
 
 
 String Functions
-	--> toUpperCase()
-	--> toLowerCase()
-	--> charAt()
-	--> indexOf()
-	--> equals()
-	--> equalsIgnoreCase()
-	--> substring()
-	--> compareTo()
-	--> hashCode()
+toUpperCase();
+	-converts all the letters to uppercase.
+toLowerCase();
+	-converts all the letters to lowercase.
+length;
+	-returns the length of the string.
+charAt();
+	-returns the character present at the specified index of the string.
+indexOf();
+	-returns the index of the given character in the string.
+equals();
+	-checks whether the given two strings are same(case sensitive).
+equalsIgnoreCase();
+	-similar to equals() but ignores the case of the letters.
+substring();
+	-returns subset of the string from the given index.
+concat();
+	-concatenates new words to the string.
+compareTo();
+	-compares the ascii value of the letters of the string and returns their difference.
+hashCode();
+	-returns the ascii value of the given letter.
+startswith();
+	-checks whether the string starts with the given char or letters(case sensitive).
+endswith();
+	-checks whether the string ends with the given char or letters(case sensitive).
+repeat();
+	-repeats the string with given no. of count.
+matches();
+	-checks whether the string matches the pattern or words(case sensitive).
+split();
+	-
 
 Example Program
 import java.util.Scanner;
 public class Strfun {
     public static void main(String[] args) {
-        String name="abiNAYA";
+        String name="ABINAYA";
         System.out.println(name);
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
@@ -114,22 +137,40 @@ public class Strfun {
         System.out.println(name.compareTo("abirami"));
         System.out.println("N".hashCode());
         System.out.println("r".hashCode());
+        System.out.println("starts with:"+name.startsWith("ab"));
+        System.out.println("ends with:"+name.endsWith("YA"));
+        System.out.println(""+name.repeat(5));
+        name="Abi,na,ya";
+        String arr[]=name.split(",");
+        System.out.println(arr[0]);
+        System.out.println(arr[2]);
+        System.out.println(arr.length);
+        System.out.println(name.matches(".......ya"));
+        System.out.println(name.matches(".......YA"));
     }
 }
 
 Output
-abiNAYA
+ABINAYA
 ABINAYA
 abinaya
 7
 A
-4
+0
 false
 true
 YA
-iNA
-abiNAYA K
--15
--36
+INA
+ABINAYA K
+-47
+-32
 78
 114
+starts with:false
+ends with:true
+ABINAYAABINAYAABINAYAABINAYAABINAYA
+Abi
+ya
+3
+true
+false
