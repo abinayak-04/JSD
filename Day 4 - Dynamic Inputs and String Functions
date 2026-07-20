@@ -115,7 +115,7 @@ repeat();
 matches();
 	-checks whether the string matches the pattern or words(case sensitive).
 split();
-	-
+	-divides a string into an array of substrings based on a specified delimiter or regular expression.
 
 Example Program
 import java.util.Scanner;
