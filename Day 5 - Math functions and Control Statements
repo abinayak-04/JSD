@@ -68,7 +68,7 @@ Output
 1.0
 2
 
-Control statement
+Control Statements in Java
 	
 	Def: Condition based execution
 	Condition:	a>34
@@ -142,147 +142,105 @@ Result:Fail
 35
 Result:Pass
 
-Tasks :
-	
-1)Write a Program to find given no. is even or odd.
+3. if else if statement (or) else if ladder
+(multiple chances)
+	def: infinite chances
+	Syntax:
+		if(condition 1)
+		{
+		 Statement 1;
+		}
+		else if(condition 2)
+		{
+		 Statement 2;
+		}
+		else if(condition 3)
+		{
+		 Statement 3;
+		}
+		--------------
+		--------------
+		else
+		{
+		 else Statement;
+		}
 
-Program
+Example Program
 import java.util.Scanner;
-public class OddorEven {
+public class controlstmt {
     public static void main(String[] args) {
         Scanner scan= new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int n=scan.nextInt();
-        if(n%2==0)
+        System.out.println("Enter 5 marks:");
+        int m1=scan.nextInt();
+        int m2=scan.nextInt();
+        int m3=scan.nextInt();
+        int m4=scan.nextInt();
+        int m5=scan.nextInt();
+        String res="";
+        if(m1>34 && m2>34 && m3>34 && m4>34 && m5>34)
         {
-            System.out.println("The given number "+n+" is Even");
+           res="Pass";
         }
         else{
-            System.out.println("The given number "+n+" is Odd");
+            res="Fail";
         }
+        int tot=m1+m2+m3+m4+m5;
+        float avg= tot/5.0f;
+        String gra="";
+        if(res=="Pass")
+        {
+            if(avg>=85)
+                gra="Outstanding";
+            else if(avg>=75)
+                gra="Excellent";
+            else if(avg>=65)
+                gra="Good";
+            else if(avg>=55)
+                gra="Fair";
+            else
+                gra="Satisfactory";
+        }
+        else{
+            gra="No grade because of fail.";
+        }
+        System.out.println("Total Marks:"+tot);
+        System.out.println("Result:"+res);
+        System.out.println("Percentage:"+avg);
+        System.out.println("Grade:"+gra);
+	scan.close();
     }
 }
 
 Output
-1)Enter a number:
+1)Enter 5 marks:
 45
-The given number 45 is Odd
-2)Enter a number:
+67
+32
+86
+76
+Total Marks:306
+Result:Fail
+Percentage:61.2
+Grade:No grade because of fail.
+2)Enter 5 marks:
+90
 98
-The given number 98 is Even
+78
+86
+99
+Total Marks:451
+Result:Pass
+Percentage:90.2
+Grade:Outstanding
 
-2) Write a Program to find greatest among 2 numbers.
+4. Nested if
+	def: A if statement with in if statement.
+	Syntax:
+		if(Condition)
+		{
+		 if(Condition)
+		{
+		 Statement;
+		}
+		}
 
-Program
-import java.util.Scanner;
-public class Greatestnum {
-    public static void main(String[] args) {
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Enter 1st number :");
-        int a=scan.nextInt();
-        System.out.println("Enter 2nd number:");
-        int b=scan.nextInt();
-        if(a>b)
-        {
-            System.out.println(a+" is greater");
-        }
-        else{
-            System.out.println(b+" is greater");
-        }
-    }
-}
-
-Output
-Enter 1st number :
-840
-Enter 2nd number:
-30
-840 is greater
-
-3) Write a program to find given age is eligible to vote or not.
-
-Program
-import java.util.Scanner;
-public class Vote {
-    public static void main(String[] args) {
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Enter your age:");
-        int age=scan.nextInt();
-        if(age>=18)
-        {
-            System.out.println("You are eligible to Vote.");
-        }
-        else{
-            System.out.println("You are not eligible to Vote");
-        }
-    }
-}
-
-Output
-1)Enter your age:
-34
-You are eligible to Vote.
-2)Enter your age:
-16
-You are not eligible to Vote
-
-4) Write a program to find leap year or not.
-
-Program
-import java.util.Scanner;
-public class Leap {
-    public static void main(String[] args) {
-         Scanner scan= new Scanner(System.in);
-        System.out.println("Enter a year:");
-        int year=scan.nextInt();
-        if(year%4==0 && year%100!=0)
-        {
-            System.out.println(year+" is a leap year");
-        }
-        else{
-            System.out.println(year+" is not a leap year");
-        }
-    }
-}
-
-Output
-1)Enter a year:
-2004
-2004 is a leap year
-2)Enter a year:
-2100
-2100 is not a leap year
-
-5) Write a program to find  eligible for marriage or not.
-
-Program
-import java.util.Scanner;
-public class Mrrgeligibility{
-    public static void main(String[] args) {
-        System.out.println("Enter your Gender(Male/Female)");
-        Scanner scan=new Scanner(System.in);
-        String gen=scan.next();
-        System.out.println("Enter your age ");
-        int age=scan.nextInt();
-        if ((gen.equalsIgnoreCase("Male")&& age>=18)||(gen.equalsIgnoreCase("Female")&& age>=21))
-            {
-             System.out.println("You are eligible for marriage");
-        }
-        else{
-            System.out.println("You are not eligible for marriage");
-        }
-        scan.close();
-    }
-}
-
-Output
-1)Enter your Gender(Male/Female)
-Female
-Enter your age 
-20
-You are not eligible for marriage
-2)Enter your Gender(Male/Female)
-Male
-Enter your age 
-23
-You are eligible for marriage
