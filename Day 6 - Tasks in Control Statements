@@ -1,0 +1,192 @@
+Tasks in Control Statements
+
+1)Write a Program to find given no. is even or odd.
+
+Program
+import java.util.Scanner;
+public class OddorEven {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n=scan.nextInt();
+        if(n%2==0)
+        {
+            System.out.println("The given number "+n+" is Even");
+        }
+        else{
+            System.out.println("The given number "+n+" is Odd");
+        }
+    }
+}
+
+Output
+1)Enter a number:
+45
+The given number 45 is Odd
+2)Enter a number:
+98
+The given number 98 is Even
+
+2) Write a Program to find greatest among 2 numbers.
+
+Program
+import java.util.Scanner;
+public class Greatestnum {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter 1st number :");
+        int a=scan.nextInt();
+        System.out.println("Enter 2nd number:");
+        int b=scan.nextInt();
+        if(a>b)
+        {
+            System.out.println(a+" is greater");
+        }
+        else{
+            System.out.println(b+" is greater");
+        }
+    }
+}
+
+Output
+Enter 1st number :
+840
+Enter 2nd number:
+30
+840 is greater
+
+3) Write a program to find given age is eligible to vote or not.
+
+Program
+import java.util.Scanner;
+public class Vote {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter your age:");
+        int age=scan.nextInt();
+        if(age>=18)
+        {
+            System.out.println("You are eligible to Vote.");
+        }
+        else{
+            System.out.println("You are not eligible to Vote");
+        }
+    }
+}
+
+Output
+1)Enter your age:
+34
+You are eligible to Vote.
+2)Enter your age:
+16
+You are not eligible to Vote
+
+4) Write a program to find leap year or not.
+
+Program
+import java.util.Scanner;
+public class Leap {
+    public static void main(String[] args) {
+         Scanner scan= new Scanner(System.in);
+        System.out.println("Enter a year:");
+        int year=scan.nextInt();
+        if(year%4==0 && year%100!=0)
+        {
+            System.out.println(year+" is a leap year");
+        }
+        else{
+            System.out.println(year+" is not a leap year");
+        }
+    }
+}
+
+Output
+1)Enter a year:
+2004
+2004 is a leap year
+2)Enter a year:
+2100
+2100 is not a leap year
+
+5) Write a program to find  eligible for marriage or not.
+
+Program
+import java.util.Scanner;
+public class Mrrgeligibility{
+    public static void main(String[] args) {
+        System.out.println("Enter your Gender(Male/Female)");
+        Scanner scan=new Scanner(System.in);
+        String gen=scan.next();
+        System.out.println("Enter your age ");
+        int age=scan.nextInt();
+        if ((gen.equalsIgnoreCase("Male")&& age>=18)||(gen.equalsIgnoreCase("Female")&& age>=21))
+            {
+             System.out.println("You are eligible for marriage");
+        }
+        else{
+            System.out.println("You are not eligible for marriage");
+        }
+        scan.close();
+    }
+}
+
+Output
+1)Enter your Gender(Male/Female)
+Female
+Enter your age 
+20
+You are not eligible for marriage
+2)Enter your Gender(Male/Female)
+Male
+Enter your age 
+23
+You are eligible for marriage
+
+6) TN EB bill calculator
+Enter Unit: 150
+Total bill amount: 0
+------------------------------------
+below<=500
+
+unit>=201 && unit<=400---------------> ₹ 4.70 / unit
+
+unit>=401 && unit<=500 ---------------> ₹ 6.30 / unit
+
+above>=501
+
+unit>=101 && unit<=400---------------> ₹ 4.70 / unit
+
+unit>=401 && unit<=500 ---------------> ₹ 6.30 / unit
+
+unit>=501       ---------------------> ₹ 8.40 / unit
+
+Program
+import java.util.Scanner;
+public class Ebbill {
+    public static void main(String[] args) {
+        float totbill=0;
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter Units:");
+        int unit=scan.nextInt();
+        if(unit<=500){
+            if(unit>=201 && unit<=400)
+                totbill= (unit-200)*4.70f;
+            else if(unit>=401 && unit<=500)
+                totbill=(unit-400)*6.30f+(200*4.70f);
+            else
+                totbill=0;
+            }
+        else
+            totbill=(unit-500)*8.40f+(300*4.70f)+(100*6.30f);
+        scan.close();
+        System.out.println("Total bill amount: "+totbill);
+
+    }
+}
+
+Output
+1)Enter Units:510
+Total bill amount: 2124.0
+2)Enter Units:168
+Total bill amount: 0.0
