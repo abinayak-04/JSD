@@ -1,6 +1,6 @@
 Tasks in Control Statements
 
-1)Write a Program to find given no. is even or odd.
+1) Write a Program to find given no. is even or odd.
 
 Program
 import java.util.Scanner;
