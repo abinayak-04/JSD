@@ -190,3 +190,50 @@ Output
 Total bill amount: 2124.0
 2)Enter Units:168
 Total bill amount: 0.0
+
+7) Write a program to find discount amount of purchase items.
+input: Total purchase amount : 999
+output: Discount amount : 0
+Conditions:
+1000-1999 -->  5% discount
+2000-3999 -->  7% discount
+4000-6000 -->  8% discount
+6000 & above --> 10% discount
+----------------------------------------------
+Program
+import java.util.Scanner;
+public class Discount{
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter the Total purchased amount:");
+        int totamt=scan.nextInt();
+        float disamt=0.0f;
+        if(totamt<6000){
+            if(totamt<1000)
+                System.out.println("Your discount amount: 0");
+            else if(totamt>=1000 && totamt<=1999){
+                disamt=(5.0f/100.0f)*totamt;
+                System.out.println("Your discount is 5% and Discount amount is:"+disamt);}
+            else if(totamt>=2000 && totamt<=3999){
+                disamt=(7.0f/100.0f)*totamt;
+                System.out.println("Your discount is 7% and Discount amount is:"+disamt);}
+             else{
+                disamt=(8.0f/100.0f)*totamt;
+                System.out.println("Your discount is 8% and Discount amount is:"+disamt);}
+        }
+        else{
+            disamt=(10.0f/100.0f)*totamt;
+            System.out.println("Your discount is 10% and Discount amount is:"+disamt);
+        }
+        scan.close();
+    }
+}
+
+Output
+1)Enter the Total purchased amount:
+1250
+Your discount is 5% and Discount amount is:62.5
+2)Enter the Total purchased amount:
+790
+Your discount amount: 0
+
