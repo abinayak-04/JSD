@@ -1,39 +1,92 @@
-# Java
-In 1991 Java was first introduced by James Gosling at sun micro system.
-Java initial starting Name was OAK Language.
-In 1995 OAK is renamed to Java.
-Java was sold to oracle corporation.
-From version jdk 1.8 onwards java is maintained by oracle.
-The cost of java sold was 2.5 billion dollar.
-Java is an platform independent languages (support all).
-Java is case sensitive Language.
-Example:
--> classname: first letter should be caps
--> var, method: first letter should be small
-Example java program
-Class Employee
-{
+# Java Notes
+
+## Introduction
+- Java was created by **James Gosling** at **Sun Microsystems** in **1991**.
+- The original name of Java was **Oak**.
+- In **1995**, Oak was renamed to **Java**.
+- Java is currently maintained by **Oracle Corporation**.
+- Oracle acquired Sun Microsystems in **2010**, and Java has been maintained by Oracle since then.
+- Java is a **platform-independent**, **object-oriented**, and **case-sensitive** programming language.
+
+## Features
+- Platform Independent ("Write Once, Run Anywhere")
+- Strongly Typed Language
+- Case Sensitive
+- Object-Oriented Programming (OOP)
+- Automatic Memory Management
+- Open Source (OpenJDK)
+- Supports both **Compilation** and **Interpretation**
+
+## Java Naming Conventions
+- **Class Name:** First letter should be uppercase.
+- **Variable Name:** First letter should be lowercase.
+- **Method Name:** First letter should be lowercase.
+
+### Example
+```java
+class Employee {
+
     int tamilMark;
     String firstName;
-    Void getDetails()
-    {
+
+    void getDetails() {
+
     }
 }
-Java extension is .java
-Java is a both compiler and interpreter.
-Java is an open source software.
-Compiler: Whole program error checking.
-Interpreter: line by line error checking.
-Compile Command for java program is javac filename.java
-To run the java program, the command is java classname
-Java default datatype: string.
-Java joining operator/concatenation operator : + 
-It supports OOPS partially.
-Java is a strongly type checked language (Compulsary to mention datatype in program)
-Example: 
--> int V = 100;
--> float V2 = 33.34;
--> char C = '#';
--> string name = "Abi";
-Java official website : www.oracle.com
-To check version or whether java is installed, the command is java --version
+```
+
+## File Extension
+```
+.java
+```
+
+## Compilation and Execution
+
+Compile a Java program:
+
+```bash
+javac FileName.java
+```
+
+Run the compiled program:
+
+```bash
+java ClassName
+```
+
+## Compiler vs Interpreter
+
+| Compiler | Interpreter |
+|----------|-------------|
+| Checks the entire program for errors | Executes code line by line |
+| Generates bytecode (.class file) | JVM interprets bytecode during execution |
+
+## Common Data Types
+
+```java
+int v = 100;
+float v2 = 33.34f;
+char c = '#';
+String name = "Abi";
+```
+
+## String Concatenation
+
+Java uses the `+` operator to join strings.
+
+```java
+String firstName = "Abi";
+String lastName = "Naya";
+
+System.out.println(firstName + " " + lastName);
+```
+
+## Check Java Version
+
+```bash
+java --version
+```
+
+## Official Website
+
+https://www.oracle.com/java/
