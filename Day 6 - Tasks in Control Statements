@@ -113,7 +113,7 @@ Output
 
 Program
 import java.util.Scanner;
-public class Mrrgeligibility{
+public class MarriageEligibility{
     public static void main(String[] args) {
         System.out.println("Enter your Gender(Male/Female)");
         Scanner scan=new Scanner(System.in);
@@ -163,7 +163,7 @@ unit>=501       ---------------------> ₹ 8.40 / unit
 
 Program
 import java.util.Scanner;
-public class Ebbill {
+public class EBbillCalci {
     public static void main(String[] args) {
         float totbill=0;
         Scanner scan=new Scanner(System.in);
