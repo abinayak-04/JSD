@@ -27,7 +27,7 @@ System.out.println();//accepts empty
 }
 }
 ```
-Output
+**Output**
 ```bash
 Welcome to Java
 Java is platform         independent

@@ -38,7 +38,7 @@ Class Employee
 * Java official website : www.oracle.com
 * Java is a strongly type checked language (Compulsary to mention datatype in program)
 
-Example: 
+**Example:** 
 - int V = 100;
 - float V2 = 33.34;
 - char C = '#';
