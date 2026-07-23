@@ -50,6 +50,7 @@ true or false:
 	i) boolean 	1 bit 		boolean v = true; boolean v = 12 < 13
 
 Example program:
+```java
 public class Datatypes {
 	public static void main(String[] args) {
 		byte b=127;
@@ -72,8 +73,10 @@ public class Datatypes {
 		System.out.println("string:"+str);
 	}
 }
+```
 
 Output
+```bash 
 byte:127
 short:32767
 integer:2147483647
@@ -83,3 +86,4 @@ double:0.12234467890987
 boolean:true
 char:@
 string:Abi
+```
