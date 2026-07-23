@@ -41,18 +41,18 @@ Java supports oops partially \
 
 ## Java Datatypes 
 1. Number:
-	i) byte		  1 byte = 8 bits = 2^8 = 256/2 = (-128 to 127)
-	ii) short	  2 byte = 16 bits = 2^16 = 65534/2 (-32768 to 32767)
-	iii) int	  4 byte = 32 bits = 2^32 = 4294967296/2 = (-2147483648 to 2147483647)
-	iv) long 	  8 byte = 64 bits = 2^64 / 2 = (-9223372036854775808 to 9223372036854775807)
+	- byte		-  1 byte = 8 bits = 2^8 = 256/2 = (-128 to 127)
+	- short	-  2 byte = 16 bits = 2^16 = 65534/2 (-32768 to 32767)
+	- int	 - 4 byte = 32 bits = 2^32 = 4294967296/2 = (-2147483648 to 2147483647)
+	- long 	-  8 byte = 64 bits = 2^64 / 2 = (-9223372036854775808 to 9223372036854775807)
 2. Decimal:
-	i) float	  4 bytes (8 digits)
-	ii) double	8 bytes (17 digits)
+	- float	 - 4 bytes (8 digits)
+	- double -	8 bytes (17 digits)
 3. text:
-	i) char		  1 byte 		char c = '#'; char c = '\n';
-	ii) string 	infinite 	string name = "Abi";
+	- char		-  1 byte 		char c = '#'; char c = '\n';
+	- string -	infinite 	string name = "Abi";
 4. true or false:
-	i) boolean 	1 bit 		boolean v = true; boolean v = 12 < 13
+	- boolean -	1 bit 		boolean v = true; boolean v = 12 < 13
 
 **Example program**
 ```java
