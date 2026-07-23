@@ -1,31 +1,99 @@
 # User Input
 ## How to get value at runtime/dynamic?
 
-Step 1:
-	header file import
-	Ex:-import java.util.Scanner;
-Step 2:
-	Create object to Scanner class
-	Ex:-Scanner scan = new Scanner(System.in);
-Step 3:
-	String data = scan.next();
-	String data = scan.nextLine();
-	int mark = scan.nextInt();
-	float avg = scan.nextFloat();
-	double d = scan.nextDouble();
-	long l = scan.nextLong();
-	short s = scan.nextShort();
-	byte b = scan.nextByte();
-	boolean bo = scan.nextBoolean();
-	char c = scan.next().charAt(0);
-Step 4:
-    	scan.close();
+## Steps to Get User Input in Java using Scanner
+
+### Step 1: Import the Scanner Class
+
+```java
+import java.util.Scanner;
+```
+
+---
+
+### Step 2: Create a Scanner Object
+
+```java
+Scanner scan = new Scanner(System.in);
+```
+
+---
+
+### Step 3: Read Different Types of Input
+
+#### String (Single Word)
+
+```java
+String data = scan.next();
+```
+
+#### String (Full Line)
+
+```java
+String data = scan.nextLine();
+```
+
+#### Integer
+
+```java
+int mark = scan.nextInt();
+```
+
+#### Float
+
+```java
+float avg = scan.nextFloat();
+```
+
+#### Double
+
+```java
+double d = scan.nextDouble();
+```
+
+#### Long
+
+```java
+long l = scan.nextLong();
+```
+
+#### Short
+
+```java
+short s = scan.nextShort();
+```
+
+#### Byte
+
+```java
+byte b = scan.nextByte();
+```
+
+#### Boolean
+
+```java
+boolean bo = scan.nextBoolean();
+```
+
+#### Character
+
+```java
+char c = scan.next().charAt(0);
+```
+
+---
+
+### Step 4: Close the Scanner
+
+```java
+scan.close();
+```
 
 *Note:*
-  next - does  not accepts space in string.
+  * next - does  not accepts space in string.
   scan.next();
 
-  nextLine - accepts space in string.
+  * nextLine - accepts space in string.
   scan.nextLine();
 
 **Example program**
@@ -88,38 +156,22 @@ Total marks:441
 ```
 
 # String Functions
-- toUpperCase();
-	converts all the letters to uppercase.
-- toLowerCase();
-	converts all the letters to lowercase.
-- length;
-	-returns the length of the string.
-- charAt();
-	returns the character present at the specified index of the string.
-- indexOf();
-	returns the index of the given character in the string.
-- equals();
-	checks whether the given two strings are same(case sensitive).
-- equalsIgnoreCase();
-	similar to equals() but ignores the case of the letters.
-- substring();
-	returns subset of the string from the given index.
-- concat();
-	concatenates new words to the string.
-- compareTo();
-	compares the ascii value of the letters of the string and returns their difference.
-- hashCode();
-	returns the ascii value of the given letter.
-- startswith();
-	checks whether the string starts with the given char or letters(case sensitive).
-- endswith();
-	checks whether the string ends with the given char or letters(case sensitive).
-- repeat();
-	repeats the string with given no. of count.
-- matches();
-	checks whether the string matches the pattern or words(case sensitive).
-- split();
-	divides a string into an array of substrings based on a specified delimiter or regular expression.
+- toUpperCase(); - converts all the letters to uppercase.
+- toLowerCase(); - converts all the letters to lowercase.
+- length; -returns the length of the string.
+- charAt(); -returns the character present at the specified index of the string.
+- indexOf(); -returns the index of the given character in the string.
+- equals(); -checks whether the given two strings are same(case sensitive).
+- equalsIgnoreCase(); -similar to equals() but ignores the case of the letters.
+- substring(); -returns subset of the string from the given index.
+- concat(); -concatenates new words to the string.
+- compareTo(); -compares the ascii value of the letters of the string and returns their difference.
+- hashCode(); -returns the ascii value of the given letter.
+- startswith(); -checks whether the string starts with the given char or letters(case sensitive).
+- endswith(); -checks whether the string ends with the given char or letters(case sensitive).
+- repeat(); -repeats the string with given no. of count.
+- matches(); -checks whether the string matches the pattern or words(case sensitive).
+- split(); -divides a string into an array of substrings based on a specified delimiter or regular expression.
 
 **Example Program**
 ```java
