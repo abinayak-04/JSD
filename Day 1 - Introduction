@@ -6,9 +6,11 @@ From version jdk 1.8 onwards java is maintained by oracle.
 The cost of java sold was 2.5 billion dollar.
 Java is an platform independent languages (support all).
 Java is case sensitive Language.
+
 Example:
 -> classname: first letter should be caps
 -> var, method: first letter should be small
+
 Example java program
 Class Employee
 {
@@ -16,8 +18,10 @@ Class Employee
     String firstName;
     Void getDetails()
     {
-    }
+
 }
+}
+
 Java extension is .java
 Java is a both compiler and interpreter.
 Java is an open source software.
@@ -29,10 +33,13 @@ Java default datatype: string.
 Java joining operator/concatenation operator : + 
 It supports OOPS partially.
 Java is a strongly type checked language (Compulsary to mention datatype in program)
+
 Example: 
 -> int V = 100;
 -> float V2 = 33.34;
 -> char C = '#';
 -> string name = "Abi";
+
 Java official website : www.oracle.com
+
 To check version or whether java is installed, the command is java --version
