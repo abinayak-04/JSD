@@ -1,5 +1,5 @@
-User Input
-How to get value at runtime/dynamic?
+# User Input
+## How to get value at runtime/dynamic?
 
 Step 1:
 	header file import
@@ -21,14 +21,15 @@ Step 3:
 Step 4:
     	scan.close();
 
-Note:
+*Note:*
   next - does  not accepts space in string.
   scan.next();
 
   nextLine - accepts space in string.
   scan.nextLine();
 
-Example program
+**Example program**
+```java
 import java.util.Scanner;
 class Runtime
 {
@@ -41,15 +42,17 @@ class Runtime
         scan.close();
     }
 }
+```
 
-Output
-Enter Your Name: Abinaya K
+**Output**
+```bash Enter Your Name: Abinaya K
 Your Name: Abinaya
+```
 
+**Task 1 - Get 5 marks from user, find total marks and its average.**
 
-Task 1 - Get 5 marks from user, find total marks and its average.
-
-Program
+*Program*
+```java
 import java.util.Scanner;
 class Task1 {
     public static void main(String args[]) {
@@ -68,8 +71,9 @@ class Task1 {
 	      System.out.println("Average marks:"+(m1+m2+m3+m4+m5)/5.0f);
     }
 }
-
-Output
+```
+*Output*
+```bash
 Enter mark1:
 98
 Enter mark2:
@@ -81,43 +85,44 @@ Enter mark4:
 Enter mark5:
 76
 Total marks:441
+```
 
-
-String Functions
-toUpperCase();
-	-converts all the letters to uppercase.
-toLowerCase();
-	-converts all the letters to lowercase.
-length;
+# String Functions
+- toUpperCase();
+	converts all the letters to uppercase.
+- toLowerCase();
+	converts all the letters to lowercase.
+- length;
 	-returns the length of the string.
-charAt();
-	-returns the character present at the specified index of the string.
-indexOf();
-	-returns the index of the given character in the string.
-equals();
-	-checks whether the given two strings are same(case sensitive).
-equalsIgnoreCase();
-	-similar to equals() but ignores the case of the letters.
-substring();
-	-returns subset of the string from the given index.
-concat();
-	-concatenates new words to the string.
-compareTo();
-	-compares the ascii value of the letters of the string and returns their difference.
-hashCode();
-	-returns the ascii value of the given letter.
-startswith();
-	-checks whether the string starts with the given char or letters(case sensitive).
-endswith();
-	-checks whether the string ends with the given char or letters(case sensitive).
-repeat();
-	-repeats the string with given no. of count.
-matches();
-	-checks whether the string matches the pattern or words(case sensitive).
-split();
-	-divides a string into an array of substrings based on a specified delimiter or regular expression.
+- charAt();
+	returns the character present at the specified index of the string.
+- indexOf();
+	returns the index of the given character in the string.
+- equals();
+	checks whether the given two strings are same(case sensitive).
+- equalsIgnoreCase();
+	similar to equals() but ignores the case of the letters.
+- substring();
+	returns subset of the string from the given index.
+- concat();
+	concatenates new words to the string.
+- compareTo();
+	compares the ascii value of the letters of the string and returns their difference.
+- hashCode();
+	returns the ascii value of the given letter.
+- startswith();
+	checks whether the string starts with the given char or letters(case sensitive).
+- endswith();
+	checks whether the string ends with the given char or letters(case sensitive).
+- repeat();
+	repeats the string with given no. of count.
+- matches();
+	checks whether the string matches the pattern or words(case sensitive).
+- split();
+	divides a string into an array of substrings based on a specified delimiter or regular expression.
 
-Example Program
+**Example Program**
+```java
 import java.util.Scanner;
 public class Strfun {
     public static void main(String[] args) {
@@ -149,8 +154,9 @@ public class Strfun {
         System.out.println(name.matches(".......YA"));
     }
 }
-
-Output
+```
+**Output**
+```bash
 ABINAYA
 ABINAYA
 abinaya
@@ -174,3 +180,4 @@ ya
 3
 true
 false
+```

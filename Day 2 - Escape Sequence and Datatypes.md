@@ -1,16 +1,17 @@
-Escape sequence or format specifier
+# Escape Sequence or Format Specifier
 
-Purpose: for the alignment purpose
+**Purpose**: for the alignment purpose
 
-\n	----> cursor moves to new line
-\t	----> tab space
-\b	----> backspace
-\r	----> over written
-\"	----> double quotes
-\'	----> single quotes
-\\	----> single slash
+- \n	- cursor moves to new line
+- \t	- tab space
+- \b	- backspace
+- \r	- over written
+- \"	- double quotes
+- \'	- single quotes
+- \\	- single slash
 
-Example Program:
+**Example Program**
+```java
 class Sample
 {
 public static void main(String args[])
@@ -22,10 +23,12 @@ System.out.println("Java default \rtype is String "); //for overwriting
 System.out.println("Java \"default\" type is String "); // for double quotes
 System.out.println("Java default 'type' is String "); // for single quotes
 System.out.println("Java supports oops partially \\ "); //to print slash
+System.out.println();//accepts empty
 }
 }
-
+```
 Output
+```bash
 Welcome to Java
 Java is platform         independent
 Java is case sensitiv
@@ -34,22 +37,24 @@ Java "default" type is String
 Java default 'type' is String
 Java supports oops partially \
 
-Java Datatypes 
-Number:
+```
+
+## Java Datatypes 
+1. Number:
 	i) byte		  1 byte = 8 bits = 2^8 = 256/2 = (-128 to 127)
 	ii) short	  2 byte = 16 bits = 2^16 = 65534/2 (-32768 to 32767)
 	iii) int	  4 byte = 32 bits = 2^32 = 4294967296/2 = (-2147483648 to 2147483647)
 	iv) long 	  8 byte = 64 bits = 2^64 / 2 = (-9223372036854775808 to 9223372036854775807)
-Decimal:
+2. Decimal:
 	i) float	  4 bytes (8 digits)
 	ii) double	8 bytes (17 digits)
-text:
+3. text:
 	i) char		  1 byte 		char c = '#'; char c = '\n';
 	ii) string 	infinite 	string name = "Abi";
-true or false:
+4. true or false:
 	i) boolean 	1 bit 		boolean v = true; boolean v = 12 < 13
 
-Example program:
+**Example program**
 ```java
 public class Datatypes {
 	public static void main(String[] args) {
@@ -75,7 +80,7 @@ public class Datatypes {
 }
 ```
 
-Output
+**Output**
 ```bash 
 byte:127
 short:32767

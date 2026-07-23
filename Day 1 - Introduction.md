@@ -9,8 +9,8 @@
 * Java is case sensitive Language.
 
 Example:
--> classname: first letter should be caps
--> var, method: first letter should be small
+- classname: first letter should be caps
+- var, method: first letter should be small
 
 Example java program
 ```java
@@ -39,9 +39,9 @@ Class Employee
 * Java is a strongly type checked language (Compulsary to mention datatype in program)
 
 Example: 
--> int V = 100;
--> float V2 = 33.34;
--> char C = '#';
--> string name = "Abi";
+- int V = 100;
+- float V2 = 33.34;
+- char C = '#';
+- string name = "Abi";
 
 To check version or whether java is installed, the command is java --version
