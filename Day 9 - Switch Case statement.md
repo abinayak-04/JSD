@@ -1,7 +1,13 @@
 # Switch Case Statement
 
 **Def:** Expression based execution.
-**Expression:** var, var+1, a+b/c, a*c
+
+**Expression:**
+- `var`
+- `var + 1`
+- `a + b / c`
+- `a * c`
+
 ### Syntax
 ```java
 Switch(expression)
@@ -21,7 +27,9 @@ Switch(expression)
         default statement;
 }
 ```
+
 *Note:* case values can be inifinite.
+
 **Example Program**
 ```java
 int k=1;
