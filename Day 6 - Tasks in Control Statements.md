@@ -1,8 +1,9 @@
-Tasks in Control Statements
+# Tasks in Control Statements
 
-1) Write a Program to find given no. is even or odd.
+## 1) Write a Program to find given no. is even or odd.
 
-Program
+**Program**
+```java
 import java.util.Scanner;
 public class OddorEven {
     public static void main(String[] args) {
@@ -18,18 +19,22 @@ public class OddorEven {
         }
     }
 }
-
+```
 Output
+```bash
 1)Enter a number:
 45
 The given number 45 is Odd
 2)Enter a number:
 98
 The given number 98 is Even
+```
 
-2) Write a Program to find greatest among 2 numbers.
+## 2) Write a Program to find greatest among 2 numbers.
 
-Program
+**Program**
+
+```java
 import java.util.Scanner;
 public class Greatestnum {
     public static void main(String[] args) {
@@ -47,17 +52,21 @@ public class Greatestnum {
         }
     }
 }
+```
 
-Output
+**Output**
+```bash
 Enter 1st number :
 840
 Enter 2nd number:
 30
 840 is greater
+```
 
-3) Write a program to find given age is eligible to vote or not.
+## 3) Write a program to find given age is eligible to vote or not.
 
-Program
+**Program**
+```java
 import java.util.Scanner;
 public class Vote {
     public static void main(String[] args) {
@@ -73,18 +82,21 @@ public class Vote {
         }
     }
 }
+```
 
-Output
+**Output**
+```bash
 1)Enter your age:
 34
 You are eligible to Vote.
 2)Enter your age:
 16
 You are not eligible to Vote
+```
+## 4) Write a program to find leap year or not.
 
-4) Write a program to find leap year or not.
-
-Program
+**Program**
+```java
 import java.util.Scanner;
 public class Leap {
     public static void main(String[] args) {
@@ -100,18 +112,20 @@ public class Leap {
         }
     }
 }
-
-Output
+```
+**Output**
+```bash
 1)Enter a year:
 2004
 2004 is a leap year
 2)Enter a year:
 2100
 2100 is not a leap year
+```
+## 5) Write a program to find  eligible for marriage or not.
 
-5) Write a program to find  eligible for marriage or not.
-
-Program
+**Program**
+```java
 import java.util.Scanner;
 public class MarriageEligibility{
     public static void main(String[] args) {
@@ -130,20 +144,23 @@ public class MarriageEligibility{
         scan.close();
     }
 }
+```
 
-Output
-1)Enter your Gender(Male/Female)
+**Output**
+```bash
+Enter your Gender(Male/Female)
 Female
 Enter your age 
 20
 You are not eligible for marriage
-2)Enter your Gender(Male/Female)
+Enter your Gender(Male/Female)
 Male
 Enter your age 
 23
 You are eligible for marriage
+```
+## 6) TN EB bill calculator
 
-6) TN EB bill calculator
 Enter Unit: 150
 Total bill amount: 0
 ------------------------------------
@@ -161,7 +178,8 @@ unit>=401 && unit<=500 ---------------> ₹ 6.30 / unit
 
 unit>=501       ---------------------> ₹ 8.40 / unit
 
-Program
+**Program**
+```java
 import java.util.Scanner;
 public class EBbillCalci {
     public static void main(String[] args) {
@@ -184,14 +202,16 @@ public class EBbillCalci {
 
     }
 }
+```
+**Output**
 
-Output
 1)Enter Units:510
 Total bill amount: 2124.0
 2)Enter Units:168
 Total bill amount: 0.0
 
-7) Write a program to find discount amount of purchase items.
+## 7) Write a program to find discount amount of purchase items.
+```text 
 input: Total purchase amount : 999
 output: Discount amount : 0
 Conditions:
@@ -199,8 +219,10 @@ Conditions:
 2000-3999 -->  7% discount
 4000-6000 -->  8% discount
 6000 & above --> 10% discount
-----------------------------------------------
-Program
+---------------------------------------------- 
+```
+**Program**
+```java
 import java.util.Scanner;
 public class Discount{
     public static void main(String[] args) {
@@ -228,12 +250,13 @@ public class Discount{
         scan.close();
     }
 }
-
-Output
-1)Enter the Total purchased amount:
+```
+**Output**
+```bash
+Enter the Total purchased amount:
 1250
 Your discount is 5% and Discount amount is:62.5
-2)Enter the Total purchased amount:
+Enter the Total purchased amount:
 790
 Your discount amount: 0
-
+```

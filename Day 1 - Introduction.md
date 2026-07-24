@@ -8,7 +8,7 @@
 * Java is an platform independent languages (support all).
 * Java is case sensitive Language.
 
-Example:
+**Example:**
 - classname: first letter should be caps
 - var, method: first letter should be small
 

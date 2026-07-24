@@ -1,9 +1,9 @@
 # Introduction to Software Development
 
 ## Software 
-- Network Software (cloud application)
-- System Software (OS,Notepad)
-- Application Software(Apps)
+1. Network Software (cloud application)
+2. System Software (OS,Notepad)
+3. Application Software(Apps)
 
 ## Roles and Responsibilities of a entry level Software Engineer
 - Developing Solutiions
