@@ -70,3 +70,86 @@
 36. `final`
 37. `null`
 38. `this`
+
+# Looping or iterator
+
+**Def:** A set of same statements executes more than one times until condition is false.
+
+## Types
+
+1. for loop - fixed iteration
+2. while loop - unfixed iteration with entry loop
+3. do...while loop - unfixed iteration with exit loop
+4. nested loop - a loop within a loop
+
+## 1. for loop
+
+**Syntax**
+
+```text
+for(intial;condition;increment/decrement)
+{
+    Statement;
+}
+```
+### Execution Steps
+
+**Step 1:** Initial (Starting value)
+
+**Ex:**
+
+```java
+int i = 1;
+```
+
+**Step 2:** Condition (true / false)
+
+**Ex:**
+
+```java
+i <= 10
+```
+
+- If true goes to **Step 3**.
+- If false terminates the loop.
+
+**Step 3:** Statement
+
+**Ex:**
+
+```java
+System.out.print(i);
+```
+
+**Step 4:** Increment / Decrement
+
+**Ex:**
+
+```java
+i++;
+```
+
+or
+
+```java
+i = i + 1;
+```
+
+or
+
+```java
+i += 1;
+```
+
+**Step 5:** Go to Step 2
+
+---
+
+**Example Program**
+
+```java
+for (int i = 5; i < 17; i += 3)
+{
+    System.out.print(i);
+}
+```
