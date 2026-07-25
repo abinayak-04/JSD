@@ -1,4 +1,3 @@
-package Java_programs;
 import java.util.Scanner;
 public class Greatestnum {
     public static void main(String[] args) {
@@ -14,5 +13,6 @@ public class Greatestnum {
         else{
             System.out.println(b+" is greater");
         }
+        scan.close();
     }
 }

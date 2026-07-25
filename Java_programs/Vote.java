@@ -1,4 +1,3 @@
-package Java_programs;
 import java.util.Scanner;
 public class Vote {
     public static void main(String[] args) {
@@ -12,5 +11,6 @@ public class Vote {
         else{
             System.out.println("You are not eligible to Vote");
         }
+        scan.close();
     }
 }

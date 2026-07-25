@@ -1,5 +1,3 @@
-package Java_programs;
-
 import java.util.Scanner;
 public class OddorEven {
     public static void main(String[] args) {
@@ -13,5 +11,6 @@ public class OddorEven {
         else{
             System.out.println("The given number "+n+" is Odd");
         }
+        scan.close();
     }
 }

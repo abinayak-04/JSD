@@ -25,5 +25,6 @@ public class Calender {
                 System.out.println("Enter valid month!");;
         
     }
+    scan.close();
     }
 }
