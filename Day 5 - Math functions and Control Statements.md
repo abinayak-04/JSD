@@ -150,13 +150,14 @@ public class controlstsmt {
 ```
 
 **Output**
-
+```bash
 Enter mark:
 20
 Result:Fail
 Enter mark:
 35
 Result:Pass
+```
 
 ### 3. if else if statement (or) else if ladder
 
@@ -233,7 +234,7 @@ public class controlstmt {
 }
 ```
 **Output**
-
+```bash
 1)Enter 5 marks:
 45
 67
@@ -244,6 +245,8 @@ Total Marks:306
 Result:Fail
 Percentage:61.2
 Grade:No grade because of fail.
+```
+```bash
 2)Enter 5 marks:
 90
 98
@@ -254,6 +257,7 @@ Total Marks:451
 Result:Pass
 Percentage:90.2
 Grade:Outstanding
+```
 
 ### 4. Nested if
 	

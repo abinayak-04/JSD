@@ -204,11 +204,12 @@ public class EBbillCalci {
 }
 ```
 **Output**
-
+```bash
 1)Enter Units:510
 Total bill amount: 2124.0
 2)Enter Units:168
 Total bill amount: 0.0
+```
 
 ## 7) Write a program to find discount amount of purchase items.
 ```text 
