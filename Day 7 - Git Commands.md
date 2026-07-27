@@ -8,11 +8,11 @@
 ## Step 3 
 - Create new folder (d:/NmvmJSD)
 ## Step 4 
-- Open cmd : d: /nmvm> git clone Paste git link
+- Open command prompt and type: d: /nmvm> git clone Paste git link
 ## Step 5 
 - cd git repository
 ## Step 6 
-- In cmd type code .
+- In command prompt type: code . (to open files in visual studio code)
 ## Step 7 
 - add files (create files)
 ## Step 8 
@@ -22,6 +22,9 @@
 ## Step 10 
 - git push
 ## To delete a file
-- Delete the file in vscode & then git add . & git commit then git push
+- Delete the file in vscode and then use these commands
+  - git add . 
+  -  git commit -m "your msg"
+  -  git push
 
 
