@@ -184,9 +184,11 @@ public static void main(String[] args) {
 200
 ```
 
-## 6.Conditional or Ternary Operator
+## 6. Conditional or Ternary Operator
 	
-	It is a short form of if-else statement. It uses three operands. They are
+	It is a short form of if-else statement. It uses three operands. 
+
+They are
 - Condition
 - Expression when condition is true
 - Expression when condition is false
