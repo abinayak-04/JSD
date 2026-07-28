@@ -6,13 +6,14 @@ public class Primeornot {
         System.out.print("Enter a value:");
         int n=scan.nextInt();
         int cnt=0;
-        for(int i=2;i<n/2;i++){
+        for(int i=1;i<=n;i++){
             if(n%i==0){
                 cnt++;
-                System.out.println(n+" is not a prime number because divisible by "+i);
             }
         }
-        if(cnt==0)
+        if(cnt>2)
+            System.out.println(n+" is a not prime number");
+        else
             System.out.println(n+" is a prime number");
         scan.close();
     }
