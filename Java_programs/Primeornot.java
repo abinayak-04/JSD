@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Primeornot {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a value:");
+        int n=scan.nextInt();
+        int cnt=0;
+        for(int i=2;i<n/2;i++){
+            if(n%i==0){
+                cnt++;
+                System.out.println(n+" is not a prime number because divisible by "+i);
+            }
+        }
+        if(cnt==0)
+            System.out.println(n+" is a prime number");
+        scan.close();
+    }
+}
