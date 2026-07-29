@@ -6,8 +6,8 @@
 - \t	- tab space
 - \b	- backspace
 - \r	- over written
--  \"	- double quotes
--  \'	- single quotes
+- `\"`	- double quotes
+- `\'`	- single quotes
 - \ \	- single slash
 
 **Example Program**
