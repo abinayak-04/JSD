@@ -10,8 +10,7 @@ public class Findchar {
         int len=name.length();
         int cnt=0;
         for(int i=0;i<len;i++){
-           char na=name.charAt(i);
-           if(na==ch)
+           if(name.charAt(i)==ch)
                 {
                     System.out.println(ch+" is found at index:"+i);
                     cnt++;
