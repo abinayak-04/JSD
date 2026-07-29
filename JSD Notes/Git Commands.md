@@ -1,5 +1,7 @@
 # Git 
-- Install Git for your device,then in the command prompt check whether it is installed by using git in cmd.
+- It is a distributed version control system used to track changes in code or files.
+
+ **Install Git for your device,then in the command prompt check whether it is installed by using git in command.**
 
 ## Step 1 
  - Create repository (don't forget to click readme and license)
