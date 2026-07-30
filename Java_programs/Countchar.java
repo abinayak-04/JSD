@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Countchar {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter Text:");
+        System.out.print("Enter Text:");
         String txt=scan.next();
         int len=txt.length();
         int acnt=0,dcnt=0,scnt=0;
