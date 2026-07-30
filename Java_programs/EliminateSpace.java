@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EliminateContinueSpace {
+public class EliminateSpace {
     public static void main(String[] args) {
         
         Scanner scan=new Scanner(System.in);
