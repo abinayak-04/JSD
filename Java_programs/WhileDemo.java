@@ -1,19 +1,5 @@
-# While Loop
+import java.util.Scanner;
 
-**Def: Unfixed iteration with entry loop.**
-
-## Syntax
-```java
-initial;
-while(condition){
-    statement;
-    increment/decrement;
-}
-```
-
-**Example program**
-```java
- import java.util.Scanner;
 public class WhileDemo {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
@@ -21,7 +7,7 @@ public class WhileDemo {
         long n=scan.nextLong();
         long r,s=0;
         while(n!=0) // 1234 123 12  1   0
-        {
+            {
             r=n%10; // 4    3   2   1
             n=n/10; // 123  12  1   0
             s=s+r;  // 0+4  4+3 7+2 9+1
@@ -30,10 +16,3 @@ public class WhileDemo {
         scan.close();
     }
 }
-```
-**Output**
-```bash
-Enter N value:
-1234
-Sum of digits:10
-```
