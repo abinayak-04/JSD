@@ -5,21 +5,20 @@ public class EvenOddandCount{
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter N value:");
         long n=scan.nextLong();
-        long r,es=0,os=0;
-        long ecnt=0,ocnt=0 ;
-        String even="",odd="";
+        long rem,es=0,os=0;
+        long ecnt=0,ocnt=0,odd=0,even=0 ;
         while(n!=0){
-            r=n%10;
+            rem=n%10;
             n=n/10;
-            if(r%2==0){
-                es=es+r;
+            if(rem%2==0){
+                es=es+rem;
                 ecnt++;
-                even=r+even;
+                even=even*10+rem;
             }
             else{
-                os=os+r;
+                os=os+rem;
                 ocnt++;
-                odd=r+odd;
+                odd=odd*10+rem;
             }
         }
             System.out.println("Even numbers are:"+even);
