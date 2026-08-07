@@ -12,5 +12,5 @@
 
 **Note**
 - When Inline CSS is used in a file.html it is taken as 1st preference
-- id is referenced by using **#** 
+- id is referenced by using ```text # ``` 
 - class is refernced by using **.**
