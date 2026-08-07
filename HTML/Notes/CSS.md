@@ -12,3 +12,4 @@
 
 **Note**
 - When Inline CSS is used in a file.html it is taken as 1st preference
+- id is referenced using **#** .
