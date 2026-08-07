@@ -6,6 +6,6 @@
 
 ## There are 3 types of CSS
 
-1. Inline CSS - within a tag
+1. Inline CSS - used within a tag
 2. Internal CSS - used inside the head tag within the .html file
 3. External CSS - it is used in separate .css file can be used for multiple .html files 
