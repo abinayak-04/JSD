@@ -9,3 +9,6 @@
 1. Inline CSS - used within a tag
 2. Internal CSS - used inside the head tag within the .html file
 3. External CSS - it is used in separate .css file can be used for multiple .html files 
+
+**Note**
+- When Inline CSS is used in a file.html it is taken as 1st preference
