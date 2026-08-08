@@ -14,3 +14,4 @@
 - When Inline CSS is used in a file.html it is taken as 1st preference
 - id is referenced by using ```#``` 
 - class is refernced by using ```.```
+- when both id and class used in a tag, the first preference is for id 
