@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            width: 200px;
+            height: auto;
+            box-shadow: 10px 10px 15px 15px gray; /* x,y,blur,padding*/
+            margin-top: 20pt;
+            margin-left: 40pt;
+        }
+        div,#img2{
+            width: 200px;
+            height: 200px;
+            border-radius:50%;
+            background-color: brown;
+            border:10px dotted yellow ;   
+            position:relative ;
+            animation-name: animi1;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-delay:0s ;
+            animation-direction: alternate;
+         }
+         @keyframes animi1 {
+            from{
+                left:0px;top:0px;
+            }
+            to{
+                left:1500px;bottom: 0px;
+                transform: rotateY(360deg);
+            }
+         }
+    </style>
+</head>
+<body>
+    <img src="./Images/abi.jpg" alt="" id="img1"><br>
+    <br>
+    <div>
+
+    </div>
+    <img src="./Images/abi.jpg" alt="" id="img2">
+</body>
+</html>
