@@ -15,6 +15,8 @@
         - var a = 10; --> integer
         - var b = 10.20; --> float
         - var c = "text@123"; -->string
+- console.log(" ") is used to identify the errors
+- document.write(" ") prints in the webpage and you can apply html tags into it
 - General format
 ```html
 <html>
