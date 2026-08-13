@@ -9,14 +9,19 @@
             var n1=document.getElementById("t1").value;
             var n2=document.getElementById("t2").value;
             var tot=parseInt(n1)+parseInt(n2);
-            alert("Total:"+tot);
+            //alert("Total:"+tot); this will display in alert box
+            //document.write("<br>Total:"+tot); this line will not display the form elements
+            document.getElementById("res").innerHTML="Total:"+tot;
         }
 
     </script>
 </head>
 <body>
-    <input type="text" id="t1" placeholder="Enter 1st number:"><br>
-    <input type="text" id="t2" placeholder="Enter 2nd number:"><br>
+    <input type="text" id="t1" placeholder="Enter 1st number"><br>
+    <input type="text" id="t2" placeholder="Enter 2nd number"><br>
     <input type="button" value="Find Total" onclick="ftotal()">
+    <div id="res">
+
+    </div>
 </body>
 </html>
