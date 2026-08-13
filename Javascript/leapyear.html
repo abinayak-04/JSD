@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function leapyear(){
+            var y=parseInt(document.getElementById("t1").value);
+            if(y%4==0 && y%100!=0)
+            document.getElementById("r1").innerHTML=y+" is a leap year";
+            else
+            document.getElementById("r1").innerHTML=y+" is not a leap year";
+        }
+    </script>
+</head>
+<body>
+    <label>Enter a number:</label>
+    <input type="text" id="t1" placeholder="Enter a year"><br>
+    <input type="button" value="Result" onclick="leapyear()">
+    <div id="r1"></div>
+</body>
+</html>

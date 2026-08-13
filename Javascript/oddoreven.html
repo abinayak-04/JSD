@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function evenorodd(){
+            var n=parseInt(document.getElementById("t1").value);
+            if(n%2==0)
+            document.getElementById("r1").innerHTML="The number "+n+" is Even";
+            else
+            document.getElementById("r1").innerHTML="The number "+n+" is Odd";
+        }
+    </script>
+</head>
+<body>
+    <label>Enter a number:</label>
+    <input type="text" id="t1" placeholder="Enter a Number"><br>
+    <input type="button" value="Result" onclick="evenorodd()">
+    <div id="r1"></div>
+</body>
+</html>
