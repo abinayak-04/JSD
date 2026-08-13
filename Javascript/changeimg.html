@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function changeimg(){
+            document.getElementById("myimg").src="./Images/"+event.target.value+
+            ".jpg";
+        }
+    </script>
+</head>
+<body>
+    <center><h1> Change image by clicking radio button</h1></center>
+    <label >Select Image:</label><br>
+    <pre>
+                <input type="radio" name="img" onchange="changeimg()" value="lion">Lion <br>
+                <input type="radio" name="img" onchange="changeimg()" value="tiger">Tiger <br>
+                <input type="radio" name="img" onchange="changeimg()" value="elephant">Elephant <br>
+                <input type="radio" name="img" onchange="changeimg()" value="zebra">Zebra <br>
+    </pre>
+    <br>
+    <center>
+        <img src="" width="60%" id="myimg">
+    </center>
+</body>
+</html>
