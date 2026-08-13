@@ -13,20 +13,35 @@
         var m5=parseInt(document.getElementById("t5").value);
         var tot=m1+m2+m3+m4+m5;
         var per=tot/5.0;
-        var res="";
-        if(m1>34 && m2>34 && m3>34 && m4>34 && m5>34)
+        var res="",gra="";
+        if(m1>34 && m2>34 && m3>34 && m4>34 && m5>34){
         res="PASS";
+        if(per>=90)
+        gra="Outstanding";
+        else if(per>=80)
+        gra="Excellent";
+        else if(per>=70)
+        gra="Good";
+        else if(per>=60)
+        gra="Fair";
         else
+        gra="Need to improve";
+        }
+        else{
         res="FAIL";
+        gra="No grade because of Fail."
+        }
         if(res=="PASS"){
             document.getElementById("r1").innerHTML="<font color='green'>Total Marks:"+tot;
             document.getElementById("r2").innerHTML="<font color='green'>Percentage :"+per;
             document.getElementById("r3").innerHTML="<font color='green'>Result:"+res;
+            document.getElementById("r4").innerHTML="<font color='green'>Grade:"+gra;
         }
         else{
             document.getElementById("r1").innerHTML="<font color='red'>Total Marks:"+tot;
             document.getElementById("r2").innerHTML="<font color='red'>Percentage :"+per;
             document.getElementById("r3").innerHTML="<font color='red'>Result:"+res;
+            document.getElementById("r4").innerHTML="<font color='red'>Grade:"+gra;
         }
         }
     </script>
@@ -41,5 +56,6 @@
     <div id="r1"></div>
     <div id="r2"></div>
     <div id="r3"></div>
+    <div id="r4"></div>
 </body>
 </html>
