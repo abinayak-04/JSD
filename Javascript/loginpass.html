@@ -27,12 +27,38 @@
             background-color: transparent;
             cursor: pointer;
         }
+        #loginbox{
+            width:50%;
+            background-color: white;
+            margin-top: 10%;
+            margin-left: 25%;
+            border: 3px solid purple;
+            border-radius: 30px;
+            box-shadow: 10px 12px 12px 10px rgb(188, 148, 192);
+            align-items: center;
+        }
+        #pwd{
+            background-color:rgb(211, 189, 212);
+            border-radius: 10px ;
+            border: 2px solid purple;
+            margin-left: 10px;
+        }
+        #l1{
+            margin-left: 20%;
+        }
+        body{
+            background-color: plum;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
-    <input type="password" id="pwd" placeholder="Enter password">
+    <div id="loginbox">
+        <center><h3>Login</h3></center>
+    <label id="l1">Password:</label><input type="password" id="pwd" placeholder="Enter password">
     <button onclick="showhide()">Show/Hide</button>
     <button onclick="showhide()" id="b1"><img id="img1"src="/CSS/Images/eyeclose.png" width="15px"></button>
+    </div>
 
 </body>
 </html>
