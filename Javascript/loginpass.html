@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function showhide(){
+            var p=document.getElementById("pwd");
+            var img=document.getElementById("b1");
+            if(p.type==="password"){
+                p.type="text";
+                document.getElementById("img1").src="/CSS/Images/eyeopen.png";
+            }
+            else{
+                p.type="password";
+                img=document.getElementById("img1").src="/CSS/Images/eyeclose.png";
+            }
+        }
+    </script>
+    <style>
+        #b1,#img1{
+            position: relative;
+            left:-58px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="password" id="pwd" placeholder="Enter password">
+    <button onclick="showhide()">Show/Hide</button>
+    <button onclick="showhide()" id="b1"><img id="img1"src="/CSS/Images/eyeclose.png" width="15px"></button>
+
+</body>
+</html>
