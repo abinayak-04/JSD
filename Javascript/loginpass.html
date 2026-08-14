@@ -21,44 +21,60 @@
     <style>
         #b1,#img1{
             position: relative;
-            left:-58px;
+            left:-20px;
             border: none;
             outline: none;
             background-color: transparent;
             cursor: pointer;
+            top: 1px;
         }
         #loginbox{
             width:50%;
             background-color: white;
             margin-top: 10%;
             margin-left: 25%;
-            border: 3px solid purple;
+            border: 4px solid purple;
             border-radius: 30px;
             box-shadow: 10px 12px 12px 10px rgb(188, 148, 192);
             align-items: center;
+            display: block;
+            padding-bottom: 20px;
+            color: purple;
         }
-        #pwd{
+        input{
             background-color:rgb(211, 189, 212);
             border-radius: 10px ;
             border: 2px solid purple;
-            margin-left: 10px;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
         #l1{
-            margin-left: 20%;
+            margin-left: 30%;
         }
         body{
             background-color: plum;
             font-family: sans-serif;
+        }
+        #log{
+            color: white;
+            border-radius: 3px;
+            border: 5px solid purple;
+            cursor: pointer;
+            background-color: purple;
+            margin-left: 50%;
         }
     </style>
 </head>
 <body>
     <div id="loginbox">
         <center><h3>Login</h3></center>
+        <label id="l1">Username:</label><input type="text" id="t1" placeholder="Enter username"><br>
     <label id="l1">Password:</label><input type="password" id="pwd" placeholder="Enter password">
-    <button onclick="showhide()">Show/Hide</button>
-    <button onclick="showhide()" id="b1"><img id="img1"src="/CSS/Images/eyeclose.png" width="15px"></button>
+    <button onclick="showhide()" id="b1">
+        <img id="img1"src="/CSS/Images/eyeclose.png" width="15px">
+    </button><br>
+    <button id="log"><center>Login</center></button>
     </div>
-
 </body>
 </html>
