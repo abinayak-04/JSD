@@ -7,12 +7,16 @@
     <script type="text/javascript">
         function displayeven(){
             var n=parseInt(document.getElementById("t1").value);
+            var even=0,te=1;
             while(n>0){
                 var rem=n%10;
                 n=Math.floor(n/10);
-                if(rem%2==0)
-                document.write(rem);
+                if(rem%2==0){
+                    even=even+rem*te; 
+                    te=te*10;
+                }
             }
+            document.write(even);
         }
     </script>
 </head>
