@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function arry(){
+            //var arr=[10,20,30,40,50,60,70,80,90,100];
+            var arr=new Array(10,20,30,40,50,60,70,80,90,100);
+            document.write("Values by writting code for each time <br>");
+            document.write("Value1:"+arr[0]);
+            document.write("Value2:"+arr[1]);
+            document.write("Value3:"+arr[2]+"<br>");
+            len=arr.length;
+            document.write("<br> Values by printing using for loop<br>");
+            for(var i=0;i<len;i++){
+                document.write("<br> Value"+i+":"+arr[i]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="arry()">Array demo</button>
+</body>
+</html>
