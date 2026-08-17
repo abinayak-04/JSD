@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function forloops(){
+            var sno=parseInt(document.getElementById("t1").value);
+            var eno=parseInt(document.getElementById("t2").value);
+            var res="";
+            for(var i=sno; i<=eno; i++){
+                res=res+i+" ";
+            }
+            document.getElementById("ans").innerHTML=res;
+        }
+    </script>
+</head>
+<body>
+    <h1><center>For loop</center></h1>
+    <input type="text" id="t1" placeholder="Enter start number"> <br>
+    <input type="text" id="t2" placeholder="Enter end number"><br>
+    <input type="button" value="Show answer" onclick="forloops()">
+    <div id="ans"></div>
+</body>
+</html>
