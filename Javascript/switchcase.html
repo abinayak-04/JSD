@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function showimg(){
+            var text=document.getElementById("t1").value;
+            switch(text){
+                case "waterfalls":
+                    document.getElementById("img").src="/CSS/Images/waterfalls.jpg";
+                    break;
+                case "sky":
+                    document.getElementById("img").src="/CSS/Images/sky.jpg";
+                    break;
+                case "spring":
+                    document.getElementById("img").src="/CSS/Images/spring.jpg";
+                    break;
+                default:
+                    document.write("enter valid name");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="t1" type="text" placeholder="Enter name" onblur="showimg()"><br>
+    <img src="" id="img" width="50%" align="center">
+
+</body>
+</html>
