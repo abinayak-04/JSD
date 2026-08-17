@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function displayeven(){
+            var n=parseInt(document.getElementById("t1").value);
+            var te=1,even=0;
+            while(n>0){
+                var rem=n%10;
+                n=Math.floor(n/10);
+                if(rem%2==0)
+                document.write(rem);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1><center>Display even numbers</center></h1>
+    <input type="text" id="t1" placeholder="Enter sequence of number"><br>
+    <button onclick="displayeven()">Result</button>
+</body>
+</html>
