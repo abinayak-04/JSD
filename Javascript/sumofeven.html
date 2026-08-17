@@ -15,7 +15,7 @@
                 sum=sum+rem;
                
             }
-            document.write(sum);
+            document.getElementById("res").innerHTML=sum;
         }
     </script>
 </head>
@@ -23,5 +23,6 @@
     <h1><center>Display even digits sum</center></h1>
     <input type="text" id="t1" placeholder="Enter sequence of number"><br>
     <button onclick="displayeven()">Result</button>
+    <div id="res"></div>
 </body>
 </html>
