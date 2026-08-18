@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function arry(){
+        var size=parseInt(document.getElementById("t1").value);
+            var arr=new Array(size);
+            var max=0;
+            for(var i=0;i<size;i++){
+                arr[i]=parseInt(prompt("Enter array value of index "+i));
+            }
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]>max)
+                   max=arr[i];
+            }
+            document.getElementById("res").innerHTML="The Greatest number is:"+max;
+        }
+    </script>
+</head>
+<body>
+    <h3>Find Maximum Number</h3>
+    <input type="text" id="t1" placeholder="Enter number">
+    <button onclick="arry()">Result</button>
+    <div id="res"></div>
+</body>
+</html>
