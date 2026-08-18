@@ -14,10 +14,23 @@
                 document.write("<br>");
             }
         }
+        function rowwisesum(){
+            var arr=[[11,22,33],[44,55,66],[77,88,99]];
+            var sum=0;
+            for(var i=0;i<3;i++){
+                for(var j=0;j<3;j++){
+                    sum=sum+arr[i][j];
+                    document.write(" "+arr[i][j]);
+                }
+                document.write("="+sum+"<br>");
+                sum=0;
+            }
+        }
     </script>
 </head>
 <body>
     <h1><center>Two Dimensional array</center></h1>
     <input type="button" value="2D array" onclick="twoDarray()">
+    <input type="button" value="2D array row wise sum" onclick="rowwisesum()">
 </body>
 </html>
