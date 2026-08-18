@@ -78,3 +78,11 @@ var rowwisesum=()=>{
                 sum=0;
             }
 ```
+## Arrow function with parameters or with arguments
+**Example**
+```js
+var add=(a,b,c)=>{
+    var tot=a+b+c;
+    alert(tot);
+}
+```
