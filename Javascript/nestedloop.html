@@ -14,10 +14,21 @@
                 document.write("<br>");
             }
         }
+         function startri(){
+            var n=document.getElementById("t1").value;
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=i;j++){
+                    document.write("  *  ");
+                }
+                document.write("<br>");
+            }
+        }
     </script>
 </head>
 <body>
+    <h1><center>Nested Loop</center></h1>
     <input type="number" id="t1" placeholder="Enter a number"><br>
     <input type="button" value="Nested Loop" onclick="result()">
+    <input type="button" value="Nested loop star" onclick="startri()">
 </body>
 </html>
