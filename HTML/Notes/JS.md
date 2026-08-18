@@ -86,3 +86,13 @@ var add=(a,b,c)=>{
     alert(tot);
 }
 ```
+## Regular expression
+**Declaration**
+```js
+var re=/^-----$/;
+
+```
+**Example**
+```js
+var re=/^[0-9]{10}$/;
+```

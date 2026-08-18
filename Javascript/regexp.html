@@ -13,11 +13,55 @@
             else
                 alert("Invalid mobile number!");
         }
+         function checkvalidname(){
+            var data=document.getElementById("t2").value;
+            var re=/^[A-Z]{3,15}$/;
+            if(data.match(re))
+                alert("Valid name!");
+            else
+                alert("Invalid name!");
+        }
+         function checkvalidname1(){
+            var data=document.getElementById("t3").value;
+            var re=/^[A-Za-z]{3,}$/;
+            if(data.match(re))
+                alert("Valid name!");
+            else
+                alert("Invalid name!");
+        }
+        function checkvalidname2(){
+            var data=document.getElementById("t4").value;
+            var re=/^[A-Za-z0-9]+$/;
+            if(data.match(re))
+                alert("Valid!");
+            else
+                alert("Invalid!");
+        }
+         function checkvalidname3(){
+            var data=document.getElementById("t5").value;
+            var re=/^[^A-Za-z0-9]*$/;
+            if(data.match(re))
+                alert("Valid!");
+            else
+                alert("Invalid!");
+        }
     </script>
 </head>
 <body>
     <h2><center>Regular Expression mobile no. validation</center></h2>
     <input type="text" id="t1" placeholder="Enter Mobile no"><br>
-    <input type="button" value="check valid or not" onclick="checkvalid()">
+    <input type="button" value="check valid or not" onclick="checkvalid()"><br>
+    <h2><center>Regular Expression Name validation(only caps min:3, max:15)</center></h2>
+    <input type="text" id="t2" placeholder="Enter name"><br>
+    <input type="button" value="check valid or not" onclick="checkvalidname()"><br>
+    <h2><center>Regular Expression Name validation(small&caps min:3, max:infinate)</center></h2>
+    <input type="text" id="t3" placeholder="Enter name"><br>
+    <input type="button" value="check valid or not" onclick="checkvalidname1()"><br>
+    <h2><center>Regular Expression Name validation(small,caps&digits min:1, max:infinate)</center></h2>
+    <input type="text" id="t4" placeholder="Enter name"><br>
+    <input type="button" value="check valid or not" onclick="checkvalidname2()"><br>
+    <h2><center>Regular Expression Name validation(special characters min:0, max:infinate)</center></h2>
+    <input type="text" id="t5" placeholder="Enter special character"><br>
+    <input type="button" value="check valid or not" onclick="checkvalidname3()"><br>
 </body>
 </html>
