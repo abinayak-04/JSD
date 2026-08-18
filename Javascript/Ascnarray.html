@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function arry(){
+        var size=parseInt(document.getElementById("t1").value);
+            var arr=new Array(size);
+            var Result=" ";
+            for(var i=0;i<size;i++){
+                arr[i]=parseInt(prompt("Enter array value of index "+i));
+            }
+            for(var i=0;i<size;i++){  
+                for(var j=i+1;j<size;j++){
+                if(arr[j]<arr[i]){
+                    var temp=arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=temp;
+                }
+            } 
+            } 
+              for(var i=0;i<size;i++)
+                Result=Result+" "+arr[i]; 
+            document.getElementById("res").innerHTML="The sorted array is: "+Result;
+        }
+    </script>
+</head>
+<body>
+    <h3>Arrange the numbers of array in ascending order</h3>
+    <input type="text" id="t1" placeholder="Enter number">
+    <button onclick="arry()">Result</button>
+    <div id="res"></div>
+</body>
+</html>
