@@ -53,4 +53,28 @@ for (var i = 1; i <= 5; i++)
 41 42 43 44 45 
 51 52 53 54 55
 ```
+## Arrow function
+- It is an another way to use function without using the function keyword.
 
+*Syntax*
+```js
+var/let/const function_name=()=>{
+    -------------------
+    -------------------
+}
+```
+
+**Example**
+```js
+var rowwisesum=()=>{
+            var arr=[[11,22,33],[44,55,66],[77,88,99]];
+            var sum=0;
+            for(var i=0;i<3;i++){
+                for(var j=0;j<3;j++){
+                    sum=sum+arr[i][j];
+                    document.write(" "+arr[i][j]);
+                }
+                document.write("="+sum+"<br>");
+                sum=0;
+            }
+```
