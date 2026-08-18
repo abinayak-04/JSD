@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function result(){
+            var n=document.getElementById("t1").value;
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=n;j++){
+                    document.write(" "+i+j);
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="t1" placeholder="Enter a number"><br>
+    <input type="button" value="Nested Loop" onclick="result()">
+</body>
+</html>
