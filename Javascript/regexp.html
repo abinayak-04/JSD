@@ -45,6 +45,14 @@
             else
                 alert("Invalid!");
         }
+         function checkvalidname4(){
+            var data=document.getElementById("t6").value;
+            var re=/^[A-Z]{1}[ ]{1}[a-z]+$/;
+            if(data.match(re))
+                alert("Valid!");
+            else
+                alert("Invalid!");
+        }
     </script>
 </head>
 <body>
@@ -63,5 +71,11 @@
     <h2><center>Regular Expression Name validation(special characters min:0, max:infinate)</center></h2>
     <input type="text" id="t5" placeholder="Enter special character"><br>
     <input type="button" value="check valid or not" onclick="checkvalidname3()"><br>
+    <h2>Regular Expression Name validation <br>
+        1st letter caps <br>
+        2nd letter space <br>
+        3rd letter onwards: small,min:1,max:infinite</h2>
+    <input type="text" id="t6" placeholder="Enter special character"><br>
+    <input type="button" value="check valid or not" onclick="checkvalidname4()"><br>
 </body>
 </html>
