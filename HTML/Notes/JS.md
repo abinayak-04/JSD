@@ -96,3 +96,11 @@ var re=/^-----$/;
 ```js
 var re=/^[0-9]{10}$/;
 ```
+## JSON 
+- Javascript Object Notation.
+
+**Purpose**
+- Light weight process
+- Fast access
+- No-sql
+- Paragraph format

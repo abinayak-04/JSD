@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function longstr(){
+            var str=document.getElementById("t1").value;
+            var len=str.length;
+            var temp=" ";
+            var ans=" ";
+            var ran=0;
+            for(var i=0;i<len;i++){
+                if(str[i]===" "){
+                    if(temp>ans){
+                        ans=temp;}
+                    temp="";
+                }
+                else{
+                    temp=temp+str[i];
+                }
+                if(temp.length>ans.length)
+                   ans=temp;
+            }
+             document.getElementById("res").innerHTML=ans;
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Find the longest string</h2>
+    <label>Enter the String</label>
+    <input type="text" id="t1" placeholder="enter string"><br>
+    <button onclick="longstr()">Result</button>
+    <div id="res"></div>
+</body>
+</html>

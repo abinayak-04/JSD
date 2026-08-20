@@ -1,5 +1,37 @@
-import React from 'react'
+/*import React from 'react'
 
+function App() {
+  var stud={
+    sno:1001,
+    sname:"Abinaya",
+    marks:{
+      tamil:100,
+      english:90,
+      maths:98,
+      science:85
+    },
+    rank:1,
+    result:"Pass"
+  }
+  return (
+    <div>
+      <h1>Json Basics</h1>
+      <h2>Student Number:{stud.sno}</h2>
+      <h2>Student Name:{stud.sname}</h2>
+      <h2>Student Marks:</h2>
+      <h2>Tamil:{stud.marks.tamil}</h2>
+      <h2>English:{stud.marks['english']}</h2>
+      <h2>Maths:{stud.marks.maths}</h2>
+      <h2>Science:{stud.marks['science']}</h2>
+      <h2>Student Rank:{stud.rank}</h2>
+      <h2>Student Result:{stud.result}</h2>
+    </div>
+  )
+}
+
+export default App*/
+
+/*import React from 'react'
 function App() {
   var arr=[11,22,33,44,55,66,77,88,99];
   var big=arr[0];
@@ -25,7 +57,7 @@ function App() {
   )
 }
 
-export default App
+export default App*/
 
 /*import React from 'react'
 export default function App() {
