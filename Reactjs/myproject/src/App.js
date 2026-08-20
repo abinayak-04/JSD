@@ -1,5 +1,33 @@
 import React from 'react'
 
+function App() {
+  var arr=[11,22,33,44,55,66,77,88,99];
+  var big=arr[0];
+  return (
+    <div>
+      <h1>Array Demo</h1>
+      {arr.map((item)=>item)}
+      <br></br>
+      {arr.map((item)=><> {item}</>)}
+      <br></br>
+      {arr.map((item)=><><br></br>{item}</>)}
+      <ol type="I">
+        {arr.map((i)=><li>{i}</li>)}
+      </ol>
+      <br></br>
+      <h1>Find highest number</h1>
+      <div style={{display:"none"}}>
+        {arr.map((v)=><>{big<v &&<>{big=v}</>}</>)}
+      </div>
+        <h1>Biggest Number:{big}</h1>
+
+    </div>
+  )
+}
+
+export default App
+
+/*import React from 'react'
 export default function App() {
   var arr=[11,22,33,44,55,66,77];
   return (
@@ -14,7 +42,7 @@ export default function App() {
       <h2>Array value index 6:{arr[6]}</h2>
     </div>
   )
-}
+}*/
 /*import React from 'react'
 function App() {
   var mark=30;
