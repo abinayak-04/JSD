@@ -10,21 +10,18 @@
             var len=str.length;
             var temp=" ";
             var ans=" ";
-            var ran=0;
             for(var i=0;i<len;i++){
                 if(str[i]===" "){
-                    if(temp>ans){
-                        ans=temp;}
+                    if(temp.length>ans.length){
+                        ans=temp;
+                    }
                     temp="";
                 }
                 else{
                     temp=temp+str[i];
                 }
-                if(temp.length>ans.length)
-                   ans=temp;
             }
-             document.getElementById("res").innerHTML=ans;
-            
+             document.getElementById("res").innerHTML=ans;           
 
         }
     </script>
