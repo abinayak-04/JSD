@@ -8,8 +8,8 @@
         function longstr(){
             var str=document.getElementById("t1").value;
             var len=str.length;
-            var temp=" ";
-            var ans=" ";
+            var temp="";
+            var ans="";
             for(var i=0;i<len;i++){
                 if(str[i]===" "){
                     if(temp.length>ans.length){
@@ -20,6 +20,9 @@
                 else{
                     temp=temp+str[i];
                 }
+                 if(temp.length > ans.length){
+                ans = temp;
+            }
             }
              document.getElementById("res").innerHTML=ans;           
 
