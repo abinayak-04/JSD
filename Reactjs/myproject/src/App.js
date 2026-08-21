@@ -1,3 +1,51 @@
+import React from 'react'
+export default function App(props) {
+  var arr=[]
+  for(var k in props.data){
+    arr.push(k)
+  }
+  return (
+    <div>
+      <h1>props with json</h1>
+      <h2>Student Roll no: {props.data.rno}</h2>
+      <h2>Student Name: {props.data.sname}</h2>
+      <h2>Student Mark: {props.data.mark}</h2>
+      <h2>Student Result: {props.data.mark>=35?"Pass":"Fail"}</h2>
+      <h2>Student eligiblibity: {props.data.iseligible?"yes eligible to study":"no not eligible"}</h2><br></br>
+    <h2>--------------------------------------------------------</h2>
+    <h2>printing using for loop</h2>
+    {arr.map((s)=><h2>{s}--------&gt;{props.data[s]===true?"eligible":props.data[s]}</h2>)}
+    <h2>-----------------------------task---------------------------</h2>
+    <h2>printing using for loop</h2>
+    {arr.map((s)=><h2>{s}---------&gt;{props.data[s]===true &&"eligible"||props.data[s]===false &&"not eligible"||props.data[s]}</h2>)}
+    </div>
+  )
+}
+
+/*import React from 'react'
+function App(props) {
+  return (
+    <div>
+      <h1>props using array</h1><br></br>
+      {props.data.map((m,n)=><>Mark {n+1}:{m}<br></br></>)}
+    </div>
+  )
+}
+export default App*/
+
+/*import React from 'react'
+function App(props) {
+  return (
+    <div>
+      <h1>props:properties</h1>
+      <h1>share data from one component to another component</h1>
+      <h2>Your name:{props.data}</h2>
+    </div>
+  )
+}
+
+export default App*/
+
 /*import React from 'react'
 
 function App() {

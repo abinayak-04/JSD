@@ -104,3 +104,39 @@ var re=/^[0-9]{10}$/;
 - Fast access
 - No-sql
 - Paragraph format
+ #### Json Two types
+ 1) Normalized json
+ 2) denormalized json
+
+
+**Normalized Json**
+
+*Example*
+```js
+Var stud = {
+    rno : 19001,
+    sname : "Abi",
+    mark : 90,
+    grade : "A",
+    result : "pass"
+}
+```
+
+
+**Denormalized Json**
+
+*Example*
+```js
+var stud = {
+    rno : 1991,
+    sname : "Pooja",
+    marks : {
+        tamil : 100,
+        english : 40,
+        maths : 70,
+        Science : 80,
+        social : 100
+    },
+    rank : 1
+}
+```
