@@ -1,4 +1,28 @@
 import React from 'react'
+
+export default function App(props) {
+  var arr=[];
+for(var k in props.data){
+  arr.push(k);
+}
+  return (
+    <div>
+      <h1>Student details</h1>
+      <h2>Roll no:{props.data.rno}</h2>
+      <h2>Name:{props.data.sname}</h2>
+      <h2>Mark 1:{props.data.marks[0]}</h2>
+      <h2>Mark 2:{props.data.marks[1]}</h2>
+      <h2>Mark 3:{props.data.marks[2]}</h2>
+      <h2>Result:{(props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail"}</h2> <br></br>
+      <hr></hr>
+      <h2>Another way of displaying results</h2>
+      {arr.map((s)=><h2>{s} :{props.data[s] || ((props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail")}</h2>)}
+      
+    </div>
+  )
+}
+
+/*import React from 'react'
 export default function App(props) {
   var arr=[]
   for(var k in props.data){
@@ -20,7 +44,7 @@ export default function App(props) {
     {arr.map((s)=><h2>{s}---------&gt;{props.data[s]===true &&"eligible"||props.data[s]===false &&"not eligible"||props.data[s]}</h2>)}
     </div>
   )
-}
+}*/
 
 /*import React from 'react'
 function App(props) {

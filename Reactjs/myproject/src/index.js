@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-var stud={rno:1001,sname:"Abi",mark:99,result:"pass",iseligible:true}
+var stud={rno:1002,sname:"Abi",marks:[99,100,98],result:null}
+//var stud={rno:1001,sname:"Abi",mark:99,result:"pass",iseligible:true}
 //var marks=[77,88,99,100,78];
 //var sname="Abi"
 
