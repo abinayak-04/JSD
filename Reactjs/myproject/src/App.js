@@ -1,5 +1,114 @@
 import React from 'react'
+function App() {
+  const dis=()=>{
+    var n1=parseInt(document.getElementById("t1").value);
+    var n2=parseInt(document.getElementById("t2").value);
+    var tot=n1+n2;
+    document.getElementById("res").innerHTML="Total:"+tot;
+  }
+  return (
+    <div>
+      <input type='text' id='t1' placeholder='enter no. 1'></input>
+      <input type='text' id='t2' placeholder='enter no. 2'></input>
+      <br></br>
+      <button onClick={dis}>Find total</button>
+      <div id="res"></div>
+    </div>
+  )
+}
 
+export default App
+
+/*import React from 'react'
+function App() {
+  const dis=()=>{
+    document.getElementById("res").innerHTML="Cursor outside textbox";
+    document.getElementById("t1").style.backgroundColor="pink";
+  }
+  const dis1=()=>{
+    document.getElementById("res").innerHTML="Cursor inside textbox";
+    document.getElementById("t1").style.backgroundColor="gold"
+  }
+  return (
+    <div>
+      <input type='text' id='t1' onBlur={dis} onFocus={dis1} placeholder='Enter your text'></input>
+      <div id='res'></div>
+    </div>
+  )
+}
+export default App*/
+
+/*import React from 'react'
+function App() {
+  const dis=(event)=>{
+    var data=event.target.value;
+    document.getElementById("res").innerHTML=data+"....typing";
+  }
+  return (
+    <div>
+      <h1>React Events</h1>
+      <input type="text" placeholder='enter text' onChange={dis}></input>
+      <br></br>
+      <div id="res"></div>
+    </div>
+  )
+}
+
+export default App*/
+
+/*import React from 'react'
+function App() {
+  return (
+    <form>
+      <h2>React Forms</h2>
+      <input type="text" id="t1" placeholder='Enter mark1'></input>
+      <br></br>
+      <input type="text" id="t2" placeholder='Enter mark2'></input>
+      <br></br>
+      <input type="text" id="t3" placeholder='Enter mark3'></input>
+      <br></br>
+      <input type="text" id="t4" placeholder='Enter mark4'></input>
+      <br></br>
+      <input type="text" id="t5" placeholder='Enter mark5'></input>
+      <br></br>
+      <input type="password" id="pwd" placeholder='enter password'></input>
+      <br></br>
+      <input type="number" id="no" placeholder='enter number'></input>
+      <br></br>
+      <label>Select Gender: </label>
+      <input type="radio" id="g1" name="gen"></input>Female
+      <input type="radio" id="g2" name="gen"></input>Male
+      <input type="radio" id="g3" name="gen"></input>Others
+      <br></br>
+      <label>Select Course: </label>
+      <input type="checkbox" id="c1"></input>java
+      <input type="checkbox" id="c2" ></input>c
+      <input type="checkbox" id="c3"></input>c#
+      <br></br>
+      <label>color:</label>
+      <input type="color" id="col"></input>
+      <br></br>
+      <label>Date:</label>
+      <input type="date" id="date"></input>
+      <br></br>
+      <label>Time:</label>
+      <input type="time" id="time"></input>
+      <br></br>
+      <label>File:</label>
+      <input type="file" id="file"></input>
+      <br></br>
+      <input type="button" value="click"></input>
+      <input type="submit" value="submit"></input>
+      <input type="reset" value="clear"></input>
+      <button>login</button>
+
+    </form>
+  )
+}
+
+export default App*/
+
+/*import React from 'react'
 export default function App(props) {
   var arr=[];
 for(var k in props.data){
@@ -16,11 +125,12 @@ for(var k in props.data){
       <h2>Result:{(props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail"}</h2> <br></br>
       <hr></hr>
       <h2>Another way of displaying results</h2>
-      {arr.map((s)=><h2>{s} :{props.data[s] || ((props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail")}</h2>)}
-      
+      {arr.map((s)=><h2>{s} :{props.data[s] || ((props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail") || (s==="marks" && props.data[s].map((v,i)=><><br></br>Mark:{i+1} :{v}</>))|| props.data[s]}</h2>) }
+      <hr></hr>
+      {arr.map((s)=><><br></br>{s}  :{((s==="marks") && props.data[s].map((v,i)=><><br></br>Mark{i+1} :{v}</>))||(props.data[s]) || ((props.data.marks[0]>34 && props.data.marks[1]>34 && props.data.marks[2]>34)?"Pass":"fail")}</>)}
     </div>
   )
-}
+}*/
 
 /*import React from 'react'
 export default function App(props) {
