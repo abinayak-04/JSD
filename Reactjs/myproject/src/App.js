@@ -1,4 +1,112 @@
 import React from 'react'
+import axios from 'axios'
+import { useState } from 'react'
+
+export default function App() {
+  const[city,setCity]=useState("")
+  //const [result,setResult]=useState(null);
+  const cityFun=(Event)=>{
+    setCity(Event.target.value)
+  }
+  const show=()=>{
+    const apiurl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=31e42a3a3beb9f81fcd50d1ba50adf58`
+    axios.get(apiurl).then((response)=>{
+      //setResult(response.data)
+      console.log(response.data)
+    })
+    //console.log(apiurl)
+  }
+  return (
+    <div>
+      <h1><center>Weather Report all over world</center></h1>
+      <h2><center>by using city name</center></h2>
+      <h2><center>Developed by K.Abinaya DCPE.,B.E.,</center></h2>
+      <hr></hr>
+      <center>
+      <input type="text" value={city} onChange={(e)=>{cityFun(e)}} name="city" placeholder='Enter city name'></input><br></br>
+      <input type="button" value="Find weather report" onClick={show}></input> 
+      </center>
+      <hr></hr>
+    </div>
+   
+  )
+}
+
+/*import React from 'react'
+function App() {
+  let dis=()=>{
+    var tags=document.getElementsByTagName("input");
+    var size=tags.length;
+    var sum=0;
+    document.getElementById("res1").innerHTML="Textbox count:"+size;
+    for(var i=0 ;i<size;i++){
+      sum=sum+parseInt(tags[i].value);
+    }
+    document.getElementById("res").innerHTML="Total:"+sum;
+
+   //var m1=parseInt(document.getElementById("t1").value);
+    //var m2=parseInt(document.getElementById("t2").value);
+    //var m3=parseInt(document.getElementById("t3").value);
+    //var m4=parseInt(document.getElementById("t4").value);
+    //var m5=parseInt(document.getElementById("t5").value);
+    //var tot=m1+m2+m3+m4+m5;
+    //document.getElementById("res").innerHTML="total"+tot;
+
+  }
+  return (
+    <div>
+      <h1>forms</h1>
+      <input type="text" placeholder="mark1" id="t1"></input><br></br>
+      <input type="text" placeholder="mark2" id="t2"></input><br></br>
+      <input type="text" placeholder="mark3" id="t3"></input><br></br>
+      <input type="text" placeholder="mark4" id="t4"></input><br></br>
+      <input type="text" placeholder="mark5" id="t5"></input><br></br>
+      <button onClick={dis}>Find total</button>
+      <div id="res"></div>
+      <div id="res1"></div>
+    </div>
+  )
+}
+
+export default App*/
+
+/*import React from 'react'
+function App() {
+  const dis=(event)=>{
+    document.getElementById("res").innerHTML="You are currently working on "+event.target.type;
+  }
+  return (
+    <div>
+      <input type='text' placeholder='text' onChange={dis}></input><br></br>
+      <input type='password' placeholder='password' onChange={dis}></input><br></br>
+      <input type='radio' name="ans" onChange={dis}></input>yes<br></br>
+      <input type='radio' name="ans" onChange={dis}></input>No<br></br>
+      <input type="checkbox" onChange={dis}></input>c
+      <input type="checkbox" onChange={dis}></input>c++
+      <input type="checkbox" onChange={dis}></input>c#<br></br>
+      <div id="res"></div>
+    </div>
+  )
+}
+export default App*/
+
+/*import React from 'react'
+function App() {
+  const dis=(event)=>{
+    document.getElementById("res").innerHTML=event.target.id+"...typing";
+  }
+  return (
+    <div>
+      <input type='text' id="textbox 1" placeholder='textbox 1' onChange={dis}></input><br></br>
+      <input type='text' id="textbox 2" placeholder='textbox 2'onChange={dis}></input><br></br>
+      <input type='text' id="textbox 3" placeholder='textbox 3'onChange={dis}></input>
+      <div id="res"></div>
+    </div>
+  )
+}
+export default App*/
+
+/*import React from 'react'
 function App() {
   const dis=()=>{
     var n1=parseInt(document.getElementById("t1").value);
@@ -16,8 +124,7 @@ function App() {
     </div>
   )
 }
-
-export default App
+export default App*/
 
 /*import React from 'react'
 function App() {
