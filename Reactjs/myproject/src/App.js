@@ -4,15 +4,19 @@ import { useState } from 'react'
 
 export default function App() {
   const[city,setCity]=useState("")
-  //const [result,setResult]=useState(null);
+  const [result,setResult]=useState(null);
   const cityFun=(Event)=>{
     setCity(Event.target.value)
   }
-  const show=()=>{
+  const show=async()=>{
     const apiurl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=31e42a3a3beb9f81fcd50d1ba50adf58`
-    axios.get(apiurl).then((response)=>{
-      //setResult(response.data)
-      console.log(response.data)
+    await axios.get(apiurl).then((response)=>{
+      setResult(response.data)
+      //console.log(response.data)
+      console.log(result)
+    }).catch((err)=>{
+      setResult(err.response.data)
+      console.log(err.response.data)
     })
     //console.log(apiurl)
   }
@@ -21,12 +25,21 @@ export default function App() {
       <h1><center>Weather Report all over world</center></h1>
       <h2><center>by using city name</center></h2>
       <h2><center>Developed by K.Abinaya DCPE.,B.E.,</center></h2>
-      <hr></hr>
+      <hr size="5" color="gold"></hr>
       <center>
       <input type="text" value={city} onChange={(e)=>{cityFun(e)}} name="city" placeholder='Enter city name'></input><br></br>
       <input type="button" value="Find weather report" onClick={show}></input> 
       </center>
-      <hr></hr>
+      <hr size="5" color="gold"></hr>
+      {result!==null && result.cod===200 &&<><h3>Country & city: {result.sys.country} & {result.name}</h3></>}
+      {result!==null && result.cod===200 &&<><h3>Main report: {result.weather[0].main}</h3></>}
+       {result!==null && result.cod===200 &&<><h3>Description: {result.weather[0].description}</h3></>}
+       {result!==null && result.cod===200 &&<><h3>Humidity: {result.main.humidity}</h3></>}
+       {result!==null && result.cod===200 &&<><h3>Wind speed: {result.wind.speed}</h3></>}
+       {result!==null && result.cod===200 &&<><h3>Temperature: {result.main.temp}</h3></>}
+        {result!==null && result.cod===200 &&<><h3>Latitude: {result.coord.lat}<br></br>Longitude: {result.coord.lon}</h3></>}
+        {result!==null && result.cod===200 &&<><h3>Sea level: {result.main.sea_level}</h3></>}
+        {result!==null && result.cod==="404" &&<><h3><font color='red' size='5'>Result: {result.message}</font></h3></>}
     </div>
    
   )
