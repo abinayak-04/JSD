@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #menu #menuitem{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+            padding: 5px;
+            color: black;
+            background-color: bisque;
+        }
+        #btn{
+            background-color: pink;
+            color: black;
+            border: 5px solid rgb(236, 137, 153);
+            border-radius: 15px;
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 10px;
+            box-shadow: 5px 5px 10px 5px gray;
+        }
+        #btn:hover{
+            cursor: pointer;
+            color: white;
+            background-color: brown;
+            font-weight: bold;
+        }
+        #dropdown{
+            display:inline-block;
+        }
+        #menu{
+            display:none;
+        }
+        #dropdown:hover #menu{
+            display: block;
+        }
+        #menuitem:hover{
+            color:gray;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Dropdown with css</h1></center>
+    <div id="dropdown">
+        <button id="btn">Home</button>
+        <div id="menu">
+            <a id="menuitem" href="#">Products</a>
+            <a id="menuitem" href="#">Login</a>
+            <a id="menuitem" href="#">SignUp</a>
+            <a id="menuitem" href="#">Help</a>
+        </div>
+    </div>
+</body>
+</html>
