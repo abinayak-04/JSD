@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Stud1 {
+
+public class Stud2 {
     int rno;
     String sname;
     float mark;
@@ -20,13 +21,25 @@ public class Stud1 {
         Scanner scan=new Scanner(System.in);
         System.out.println("Enter the number of students:");
         int n=scan.nextInt();
-        Stud1 s[]=new Stud1[n];
+        Stud2 s[]=new Stud2[n];
         for(int i=0;i<n;i++){
-            s[i]=new Stud1();
+            s[i]=new Stud2();
             s[i].getdata();
         }
         for(int i=0;i<n;i++){
             s[i].dis();
+        }
+        // fail student list(mark<50)
+        System.out.println("---------Failed students list------------");
+        for(int i=0;i<n;i++){
+            if(s[i].mark<50)
+                s[i].dis();
+        }
+        // pass student list(mark>=50)
+        System.out.println("---------Passed students list------------");
+        for(int i=0;i<n;i++){
+            if(s[i].mark>=50)
+                s[i].dis();
         }
         scan.close();
     }
