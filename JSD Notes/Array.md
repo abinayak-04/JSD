@@ -28,6 +28,7 @@ Explanation
 
 ### In-built methods in array
 - variablename.length;
+
 *Example*
 ```java
 int [] marks={44,55,66,77};
