@@ -3,11 +3,11 @@
 
 * **definition:** set of complete and incomplete methods.
 * **Purpose:** methods override purpose
-* **SYNTAX:** 
+* **Syntax:** 
   ```java
   abstract class classname
   {
-      variable => should be declared & defined; (can)
+      variable => should be declared & defined;
       method => can be complete/incomplete.
   }
   ```
@@ -32,7 +32,7 @@ Wrapping of data.
 * **Eg:** Capsule tablets
 * **Technical explanation:** class containing variables & methods.
 * *private - variables specified using private is accessible only inside that specific class.*
-*
+
 ---
 ### Access Specifier
 1. Private
@@ -40,9 +40,45 @@ Wrapping of data.
 3. Protected
 4. Default
 
-| Access Specifier | Pack 1 (base) | Pack 1 (derived) | Main | Pack 2 (base) | Pack 2 (derived) |
+| Access Specifier | Pack 1 (base) | Pack 1 (derived) | Pack 1 (Main) | Pack 2 (base) | Pack 2 (derived) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Private** | yes | NO | NO | No | NO |
-| **Public** | yes | yes | yes | Yes | Yes |
-| **Protected** | yes | yes | yes | NO | Yes |
-| **Default** | yes | yes | yes | No | No |
+| **Private** | Yes | No | No | No | No |
+| **Public** | Yes | Yes | Yes | Yes | Yes |
+| **Protected** | Yes | Yes | Yes | No | Yes |
+| **Default** | Yes | Yes | Yes | No | No |
+
+---
+### Exception Handling
+- To avoid runtime or dynamic errors
+#### Types
+1. Checked Exceptions(compile time)
+2. Runtime Exceptions(runtime)
+
+#### Inbuilt Exception
+- ArthmeticException    (0/0,anything/0)
+- InputMismatchException    (wrong input format)
+- ArrayIndexOutOfBoundsException    (out of range)
+- NegativeArraySizeException    (we can't declare negative size)
+- FileNotFoundException
+
+#### Custom or Userdefined Exception
+- AgeException
+- PasswordException
+
+**Syntax**
+```java
+try
+{
+    //write code
+}
+catch(Exceptionname obj)
+{
+    //only if error found in try block
+    //catch iis must
+}
+finally
+{
+//optional
+//works even if eeror not found
+}
+```

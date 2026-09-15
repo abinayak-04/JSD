@@ -1,10 +1,10 @@
 # Array
 - A set of value arranged in sequential of single name variable with same datatype values.
 
-set of value --> {val1,val2,...}
-sequential arrange ---> 0  1  2  3 ......
-single variable
-same datatype ---> {11,22,33,44} or {"a","b","c"}
+- set of value --> {val1,val2,...}
+- sequential arrange ---> 0  1  2  3 ......
+- single variable
+- same datatype ---> {11,22,33,44} or {"a","b","c"}
 
 ## Types of Array
 1. Single or One dimensional array
@@ -28,6 +28,7 @@ Explanation
 
 ### In-built methods in array
 - variablename.length;
+
 
 *Example*
 ```java
