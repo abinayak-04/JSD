@@ -167,25 +167,6 @@ Here is the text extracted from the image in Markdown format:
 ----
 ## Managing Services
 
-## Process flow chart
-
-```
-     Program
-        │
-        ▼ Execute
-     Process
-    ┌───┴───┐
-
-Application Daemon
-│       │
-User Interact Background
-└───┬───┘
-▼
-Service
-
-```
-
-
 ------------------------------
 ## Definitions
 
