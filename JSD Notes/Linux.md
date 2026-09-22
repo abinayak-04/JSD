@@ -165,19 +165,26 @@ Here is the text extracted from the image in Markdown format:
 * Each Linux has specific file format to download any software.
 * You should know your Linux distribution (Ex. Red hat or Ubuntu).
 ----
-## Managing Services## Process flow chart
+## Managing Services
 
-        Program
-           │
-           ▼ Execute
-        Process
-       ┌───┴───┐
-  Application  Daemon
-       │         │
-User Interact  Background
-       └───┬───┘
-           ▼
-        Service
+## Process flow chart
+
+```
+     Program
+        │
+        ▼ Execute
+     Process
+    ┌───┴───┐
+
+Application Daemon
+│       │
+User Interact Background
+└───┬───┘
+▼
+Service
+
+```
+
 
 ------------------------------
 ## Definitions
