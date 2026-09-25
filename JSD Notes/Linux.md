@@ -166,9 +166,7 @@ Here is the text extracted from the image in Markdown format:
 * You should know your Linux distribution (Ex. Red hat or Ubuntu).
 ----
 ## Managing Services
-
-------------------------------
-## Definitions
+### Definitions
 
 * Process
 * A process is an instance of a program that is currently being executed.
